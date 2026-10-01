@@ -1,0 +1,34 @@
+* You also have credits in another currency
+Add to Сart
+All email series
+Amount of credits: min - %1, max - %2
+Balance Total
+Balance Update
+Current credit balance: <b>%1</b>
+Email: %1
+Emails from this series
+Notify friend
+Product image for %1
+Refill balance
+Report data table for %1
+Select what you'd like to unsubscribe from:
+Send Credit to Friend
+Store Credit amount "%1" should be a valid number, i.e. 5 or 7.5
+Store Credits
+Store credit was successfully applied
+Store credit was successfully canceled
+Subscribe to email notifications
+There have been no transactions made yet.
+Total Refunded to Store Credit
+Transactions History
+Unsubscribe from
+Use Max Store Credit
+Use Store Credits
+View product %1
+View product details for %1
+You can use only %1
+You have been unsubscribed
+Your account balance has been updated at %store_name.
+Your current balance is:
+Your current balance is: <b>%1</b>
+Your unsubscription preferences have been saved.
