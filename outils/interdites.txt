@@ -1,0 +1,3 @@
+# Chaines comparees ou affectees en dur dans du JavaScript.
+# Ne les traduire qu'apres correction du code par maxcode/module-translation-fixes.
+Manage Gallery

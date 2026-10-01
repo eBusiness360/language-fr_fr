@@ -1,0 +1,20 @@
+# Traductions identiques a l'anglais autorisees : noms propres et sigles.
+PayPal
+SKU
+URL
+SEO
+SMTP
+API
+ID
+IP
+CSV
+PDF
+XML
+JSON
+HTML
+CSS
+Google
+Facebook
+Instagram
+Amazon
+Klarna
