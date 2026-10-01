@@ -1,0 +1,19 @@
+{
+    "name": "maxcode/language-fr_fr",
+    "description": "Complément français pour Magento 2 : ce que le pack communautaire ne traduit pas — cœur et modules tiers courants.",
+    "type": "magento2-language",
+    "license": "MIT",
+    "authors": [
+        {"name": "eBusiness360 – Maxime LESGUILLIER", "homepage": "https://github.com/eBusiness360"}
+    ],
+    "require": {
+        "magento/framework": "^103.0",
+        "community-engineering/language-fr_fr": ">=0.0.64"
+    },
+    "suggest": {
+        "maxcode/module-translation-fixes": "Rend traduisibles les chaînes que Magento n’expose pas à la traduction"
+    },
+    "autoload": {
+        "files": ["registration.php"]
+    }
+}

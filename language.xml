@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * maxcode/language-fr_fr — licence MIT.
+ * Copyright (c) 2026 eBusiness360 – Maxime LESGUILLIER.
+ */
+-->
+<language xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="urn:magento:framework:App/Language/package.xsd">
+    <code>fr_FR</code>
+    <vendor>maxcode</vendor>
+    <package>fr_fr</package>
+
+    <!--
+        PRIORITE : ce paquet doit gagner sur celui de la communaute.
+
+        Magento charge les traductions dans cet ordre (Framework\Translate::loadData) :
+            module  ->  PAQUET DE LANGUE  ->  theme  ->  base
+        Le dernier charge l'emporte. Entre paquets, l'arbitrage se fait sur
+        sort_order (App\Language\Dictionary). community-engineering/language-fr_fr
+        n'en declare AUCUN, donc 0. 100 garantit la priorite.
+
+        Tous les *.csv de la RACINE de ce paquet sont lus, par ordre alphabetique
+        (Dictionary::readPackCsv). Une meme cle dans deux fichiers serait arbitree
+        en silence par l'alphabet : d'ou la regle « une cle, un fichier ».
+    -->
+    <sort_order>100</sort_order>
+
+    <use vendor="community-engineering" package="fr_fr"/>
+
+    <!--
+        REGLES D'ECRITURE — controlees par outils/verifier.php.
+
+        1. Apostrophe typographique U+2019, jamais l'apostrophe droite : Magento
+           insere certaines traductions dans une chaine JavaScript entre
+           apostrophes simples, dans un attribut data-bind. Une apostrophe droite
+           ferme la chaine, Knockout tombe (« Unable to parse bindings »).
+        2. Chaines comparees en dur dans du JavaScript : interdites tant que le
+           module maxcode/module-translation-fixes n'a pas corrige le code
+           (outils/interdites.txt).
+    -->
+</language>
