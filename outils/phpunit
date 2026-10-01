@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# PHPUnit 10 en phar, telecharge une fois dans outils/.cache.
+set -euo pipefail
+racine="$(cd "$(dirname "$0")/.." && pwd)"
+phar="$racine/outils/.cache/phpunit.phar"
+if [ ! -f "$phar" ]; then
+    mkdir -p "$racine/outils/.cache"
+    curl -sSL https://phar.phpunit.de/phpunit-10.phar -o "$phar"
+fi
+exec "$racine/outils/php" outils/.cache/phpunit.phar -c outils/phpunit.xml "$@"
