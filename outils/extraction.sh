@@ -8,7 +8,7 @@ rm -rf "$site/var/pack-fr"
 mkdir -p "$site/var/pack-fr"
 cp -r "$pack/outils" "$site/var/pack-fr/outils"
 rm -rf "$site/var/pack-fr/outils/.cache" "$site/var/pack-fr/outils/a-traduire"
-(cd "$site" && ddev exec php -d memory_limit=4G var/pack-fr/outils/extraire.php)
+(cd "$site" && ddev exec php -d memory_limit=2G var/pack-fr/outils/extraire.php)
 rm -rf "$pack/outils/a-traduire/sites/$nom"
 mkdir -p "$pack/outils/a-traduire/sites"
 cp -r "$site/var/pack-fr/sortie" "$pack/outils/a-traduire/sites/$nom"

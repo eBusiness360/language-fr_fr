@@ -91,7 +91,12 @@ foreach ($composants as $nom => $c) {
                 $lignes = file($f->getPathname(), FILE_IGNORE_NEW_LINES) ?: [];
                 $chercheUnTexte = str_contains(implode("\n", $lignes), ':contains(');
                 foreach ($lignes as $ligne) {
-                    if (($chercheUnTexte || preg_match('/[!=]=/', $ligne)) && !str_contains($ligne, '$t(')) {
+                    // Hors lignes deja traduites ($t(, $.mage.__(, __() et lignes
+                    // minifiees (un bundle tient sur une ligne : tout y « compare »).
+                    if (strlen($ligne) > 500 || preg_match('/\$t\(|__\(/', $ligne)) {
+                        continue;
+                    }
+                    if ($chercheUnTexte || preg_match('/[!=]=/', $ligne)) {
                         $lignesJs[] = $ligne;
                     }
                 }
