@@ -1,0 +1,6 @@
+# Composants exclus du pack (prefixe du nom de module ou de theme).
+# Modules Maxcode : ils embarquent leurs propres traductions.
+Maxcode_
+# Themes propres a un client : rien d'universel.
+frontend/Totalinux/
+frontend/Smartwave/porto_child

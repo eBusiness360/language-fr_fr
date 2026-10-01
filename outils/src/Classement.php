@@ -21,9 +21,21 @@ final class Classement
         return $v === 'magento' ? 'core' : $v;
     }
 
-    /** Les modules Maxcode portent leurs propres chaines (regle « un module voyage avec ses chaines »). */
-    public static function exclu(string $composant): bool
+    /**
+     * Composants hors du pack (outils/exclus.txt) : les modules Maxcode portent
+     * leurs propres chaines (« un module voyage avec ses chaines »), les themes
+     * propres a un client n'ont rien a faire dans un pack universel.
+     *
+     * @param list<string> $prefixes
+     */
+    public static function exclu(string $composant, array $prefixes): bool
     {
-        return str_starts_with($composant, 'Maxcode_');
+        foreach ($prefixes as $p) {
+            if (str_starts_with($composant, $p)) {
+                return true;
+            }
+        }
+
+        return false;
     }
 }

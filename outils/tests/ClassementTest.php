@@ -20,9 +20,12 @@ final class ClassementTest extends TestCase
         self::assertSame('core', Classement::editeur('lib/web'));
     }
 
-    public function testLesModulesMaxcodeSontExclus(): void
+    public function testExclusionParPrefixe(): void
     {
-        self::assertTrue(Classement::exclu('Maxcode_SupplierOrder'));
-        self::assertFalse(Classement::exclu('Amasty_Base'));
+        $p = ['Maxcode_', 'frontend/Totalinux/'];
+        self::assertTrue(Classement::exclu('Maxcode_SupplierOrder', $p));
+        self::assertTrue(Classement::exclu('frontend/Totalinux/default', $p));
+        self::assertFalse(Classement::exclu('Amasty_Base', $p));
+        self::assertFalse(Classement::exclu('frontend/Swissup/breeze', $p));
     }
 }
