@@ -1,0 +1,9 @@
+<a href="%1">Learn more about privacy policy</a>.
+Next Image
+Previous Image
+Show less
+Skip to product list
+The valid format is {0}. For example, the valid date for "May 4, 2001" is {1}
+View Image
+Zoom In
+Zoom Out

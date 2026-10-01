@@ -1,0 +1,10 @@
+1 column Full Width
+Follow
+Follow @%1
+Follow on %1
+Pin It
+Subscriber First Name
+Subscriber Last Name
+Tweet #%1
+View more
+Your browser does not support the video tag.
