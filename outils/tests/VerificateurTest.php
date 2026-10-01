@@ -96,4 +96,10 @@ final class VerificateurTest extends TestCase
         self::assertSame(['apostrophe'], $this->regles(['core.csv' => $f]));
         self::assertSame(['glossaire'], $this->regles(['core.csv' => $f], 'avertissement'));
     }
+
+    public function testLeGlossaireIgnoreLesVariables(): void
+    {
+        $f = $this->fichier('core.csv', "\"Hello %shopping_cart_name\",\"Bonjour %shopping_cart_name\"\n");
+        self::assertSame([], $this->regles(['core.csv' => $f], 'avertissement'));
+    }
 }

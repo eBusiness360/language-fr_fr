@@ -76,8 +76,11 @@ final class Verificateur
                     $constats[] = new Constat('avertissement', $nom, $ligne, $t['regle'], $t['message'] . ' — « ' . mb_substr($trad, 0, 60) . ' »');
                 }
                 $normalise = str_replace('’', "'", mb_strtolower($trad));
+                // Le vocabulaire se juge sur le texte : pas dans %customer_name,
+                // {{var customer}} ni dans les attributs des balises.
+                $texteCle = (string) preg_replace('/%[a-zA-Z_]\w*/', ' ', Typographie::texteVisible($cle));
                 foreach ($this->glossaire as $en => $traduit) {
-                    if (preg_match('/(?<!\p{L})' . preg_quote((string) $en, '/') . '(?!\p{L})/iu', $cle)
+                    if (preg_match('/(?<![\p{L}_])' . preg_quote((string) $en, '/') . '(?![\p{L}_])/iu', $texteCle)
                         && !str_contains($normalise, str_replace('’', "'", $traduit))) {
                         $constats[] = new Constat('avertissement', $nom, $ligne, 'glossaire',
                             sprintf('« %s » se traduit « %s » dans le pack communautaire — « %s »', $en, $traduit, mb_substr($cle, 0, 60)));

@@ -53,17 +53,23 @@ final class Typographie
             $a[] = ['regle' => 'tutoiement', 'message' => 'tutoiement : le vouvoiement est la règle côté client'];
         }
 
-        // Majuscules de titre : au moins deux mots, hors le premier, qui
-        // commencent par une majuscule sans etre des sigles ni des marques
-        // en casse mixte (PayPal).
+        // Majuscules de titre (« Ajouter Au Panier ») : au moins deux mots
+        // CONSECUTIFS capitalises en milieu de phrase. Ne comptent ni le
+        // premier mot d'une phrase ou d'un libelle cite (apres . : ! ? «), ni
+        // les sigles, ni les marques en casse mixte (PayPal) ; un nom propre
+        // isole (« Avis Amasty ») ne declenche donc rien.
         $mots = preg_split('/\s+/u', trim($t)) ?: [];
-        $titres = 0;
-        foreach (array_slice($mots, 1) as $mot) {
-            if (preg_match('/^\p{Lu}\p{Ll}+$/u', $mot)) {
-                $titres++;
+        $suite = 0;
+        $titre = false;
+        foreach ($mots as $i => $mot) {
+            $debut = $i === 0 || preg_match('/[.:!?«]$/u', $mots[$i - 1]);
+            if (!$debut && preg_match('/^\p{Lu}\p{Ll}+[,;]?$/u', $mot)) {
+                $titre = $titre || ++$suite >= 2;
+            } else {
+                $suite = 0;
             }
         }
-        if ($titres >= 2) {
+        if ($titre) {
             $a[] = ['regle' => 'majuscules', 'message' => 'majuscules de titre : en français, seule la première lettre de la phrase'];
         }
 

@@ -72,4 +72,11 @@ final class TypographieTest extends TestCase
         self::assertSame(['majuscules'], array_column(Typographie::avertissements('Ajouter Au Panier Rapide'), 'regle'));
         self::assertSame([], Typographie::avertissements('Ajouter au panier PayPal'));
     }
+
+    public function testMajusculesIsoleesOuApresGuillemetNeSontPasSignalees(): void
+    {
+        self::assertSame([], Typographie::avertissements('Avis Amasty : veuillez accéder à la Configuration'));
+        self::assertSame([], Typographie::avertissements('Formulaire Amasty «' . self::N . 'Demander un devis' . self::N . '»'));
+        self::assertSame([], Typographie::avertissements('Total. Vous Pouvez'));
+    }
 }
