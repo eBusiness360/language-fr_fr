@@ -1,0 +1,11 @@
+{
+    "locale": "fr_FR",
+    "composant": "maxcode_fr_fr",
+    "paquet": "maxcode/language-fr_fr",
+    "communautaire": {
+        "paquet": "community-engineering/language-fr_fr",
+        "depot": "magento-l10n/language-fr_FR",
+        "fichier": "fr_FR.csv"
+    },
+    "typographie": "fr"
+}
