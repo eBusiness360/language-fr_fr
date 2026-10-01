@@ -15,6 +15,7 @@ final class IntegrationTest extends TestCase
             [
                 ['cle' => 'Your cart', 'traduction' => "Votre panier ...", 'module' => 'Amasty_Cart', 'zone' => 'front'],
                 ['cle' => 'Empty', 'traduction' => '', 'module' => 'Amasty_Cart', 'zone' => 'admin'],
+                ['cle' => 'PayPal', 'traduction' => '=', 'module' => 'Amasty_Cart', 'zone' => 'front'],
                 ['cle' => 'In core', 'traduction' => 'Dans le cœur', 'module' => 'Amasty_Cart', 'zone' => 'admin'],
                 ['cle' => 'Community', 'traduction' => 'Communauté', 'module' => 'Amasty_Cart', 'zone' => 'admin'],
             ],

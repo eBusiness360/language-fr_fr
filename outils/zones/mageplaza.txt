@@ -1,0 +1,50 @@
+ at 
+<a href="%cart_recovery_link">Go to your cart</a>
+About the Author
+Add New Post
+Allow Comment
+Author Information
+By: 
+DISLIKE
+Did you find it helpful?
+Display Name
+Display Name 
+Duplicate Post
+Edit Post
+Excl. Tax:
+Facebook Link
+Full URL
+Incl. Tax:
+LIKE
+Latest
+Like
+Look like you left something in your shopping cart on our site. Please allow me to take you directly back to your cart with no extra fee. I'd be happy to.
+Modify By: 
+Monthly Archive
+No Posts
+No Related Posts
+No info
+Please comeback and complete your purchase!
+Post Content
+Post List
+Post Name
+Publish Date
+Related Posts
+Reply
+Search blogs here...
+Select Tag
+Select Topic
+Share this post
+Sign Up to be an Author
+Signup
+Signup Author
+TEST EMAIL from Custom SMTP
+Tags: %1
+There are no posts at this moment
+Topics
+Twitter Link
+Type comments here...
+View: %1
+Your account must be licensed in order to perform the Post creation and management function
+Your display name
+Your store has been connected with a custom SMTP successfully. Now you can Save Config and use this connection.

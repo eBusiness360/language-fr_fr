@@ -6,6 +6,9 @@ namespace Maxcode\LanguagePack\Outils;
 /** Fait entrer les lignes traduites d'une liste de travail dans le fichier d'un editeur. */
 final class Integration
 {
+    /** Marque, dans une liste de travail, une cle volontairement non traduite. */
+    public const IDENTIQUE = '=';
+
     /**
      * @param array<string, string> $existant cle => traduction du fichier de l'editeur
      * @param list<array{cle: string, traduction: string, module: string, zone: string}> $lignes
@@ -19,7 +22,9 @@ final class Integration
         $front = [];
         $refusees = [];
         foreach ($lignes as $l) {
-            if (trim($l['traduction']) === '') {
+            // Vide : pas encore traduite. « = » : identique a l'anglais par choix
+            // (nom propre, sigle), donc sans effet et laissee hors du pack.
+            if (in_array(trim($l['traduction']), ['', self::IDENTIQUE], true)) {
                 continue;
             }
             if (isset($autresFichiers[$l['cle']])) {
