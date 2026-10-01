@@ -1,0 +1,21 @@
+name: Vérification du pack
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  verifier:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.3'
+          tools: phpunit:10
+      - name: Tests des outils
+        run: phpunit -c outils/phpunit.xml
+      - name: Pack communautaire de référence
+        run: php outils/telecharger-communautaire.php
+      - name: Règles du pack
+        run: php outils/verifier.php
