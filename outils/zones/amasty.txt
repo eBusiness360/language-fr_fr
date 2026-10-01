@@ -1,0 +1,50 @@
+ can be found at the following stores:&nbsp;
+ reviews
+A new comment was added to the order #<strong>%increment_id </strong>
+Accept
+Accept and redirect
+Additional Customer Attributes
+Address: 
+Assigned From <strong>%from</strong> To <strong>%to</strong>
+Choose a Dealer
+City: 
+Country: 
+Current location
+Cycling
+Dealer
+Dealer Form
+Decline and stay on current site
+Directions
+Distance:
+Edit Dealer
+Locate Nearby
+Marker Image
+Please %1 to leave a review.
+Product was added to cart confirmation popup
+Redirect notification
+Related products carousel
+Reset Location
+Reverse starting point and destination
+Search Location
+See full review
+Select Some Options
+Sorry we're unable to display the nearby stores because the "Use browser location" or "Use Geo IP" options are disabled in the module settings. Please, contact the administrator.
+Sorry, Google failed to get directions and answered with status: 
+Sorry, no locations were found.
+Sorry, there is no available view of the street yet.
+Special promotion. 
+State: 
+The %author wrote:
+This is an automatic notification about a new quote request(s) made. 
+Transit
+Travel Modes
+Unfortunately your quote has been declined. 
+Update quantity
+Work Time Today:
+Write a review
+You need to choose address from the dropdown with suggestions.
+Your Dealer Info
+Your quote request from %store_name has been canceled.  You can check the status of your quote request by 
+Your quote request from %store_name has been modified.  You can check the status of your quote request by  
+Your quote request from %store_name=$store.getFrontendName() has been modified.  You can check the status of your quote request by  
+Zip: 
