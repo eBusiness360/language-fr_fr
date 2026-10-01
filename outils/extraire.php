@@ -61,6 +61,7 @@ $exclus = array_values(array_filter(
 ));
 
 $index = [];   // cle => [module, editeur, zone]
+$besoin = [];  // cle => true : au moins un composant l'utilise sans la traduire
 $jsEnDur = [];
 foreach ($composants as $nom => $c) {
     if (Classement::exclu($nom, $exclus)) {
@@ -72,6 +73,26 @@ foreach ($composants as $nom => $c) {
         $toutes = array_merge($toutes, array_column(Csv::lire($enUs), 'cle'));
     }
     $toutes = array_values(array_unique($toutes));
+
+    // Le composant livre-t-il sa propre traduction dans la locale du pack ?
+    // Une cle ne reste a traduire que si au moins un composant qui l'utilise
+    // ne la traduit pas lui-meme : sinon notre pack, charge apres lui,
+    // ecraserait sa traduction.
+    $propres = [];
+    $csvPropre = $c['chemin'] . '/i18n/' . $langue->locale . '.csv';
+    if (is_file($csvPropre)) {
+        foreach (Csv::lire($csvPropre) as $e) {
+            if ($e['traduction'] !== '' && $e['traduction'] !== $e['cle']) {
+                $propres[$e['cle']] = true;
+            }
+        }
+    }
+    foreach ($toutes as $cle) {
+        if (!isset($propres[$cle])) {
+            $besoin[(string) $cle] = true;
+        }
+    }
+
     if ($c['front'] === $c['chemin']) {
         $front = array_flip($toutes);
     } else {
@@ -118,11 +139,12 @@ foreach ($composants as $nom => $c) {
 }
 
 // Deja traduites : paquets de langue de la locale du pack installes sur ce
-// site (communautaire, et notre copie locale tant qu'elle existe).
+// site (le communautaire), hors le notre : il ne doit pas se masquer lui-meme,
+// la fusion a besoin de savoir quelles cles du pack servent encore.
 $suffixe = '_' . strtolower($langue->locale);
 $dejaTraduit = [];
 foreach ($registrar->getPaths(ComponentRegistrar::LANGUAGE) as $nom => $chemin) {
-    if (!str_ends_with(strtolower($nom), $suffixe)) {
+    if (!str_ends_with(strtolower($nom), $suffixe) || strtolower($nom) === strtolower($langue->composant)) {
         continue;
     }
     foreach (glob("$chemin/*.csv") ?: [] as $f) {
@@ -138,7 +160,7 @@ $h = fopen("$sortie/index.csv", 'wb');
 $listes = [];
 foreach ($index as $cle => [$module, $editeur, $zone]) {
     fputcsv($h, [(string) $cle, $module, $editeur, $zone], ',', '"', '', "\n");
-    if (!isset($dejaTraduit[$cle])) {
+    if (!isset($dejaTraduit[$cle]) && isset($besoin[$cle])) {
         $listes[$editeur][] = [(string) $cle, '', $module, $zone];
     }
 }
@@ -154,6 +176,7 @@ file_put_contents("$sortie/js-en-dur.txt", implode("\n", array_map(
     static fn (string|int $c, string $m): string => "$m\t$c", array_keys($jsEnDur), $jsEnDur
 )) . "\n");
 
-printf("%d phrases, %d déjà traduites, %d comparées dans du JS (à trier), %d à traduire en %d fichier(s).\n",
-    count($index), count(array_intersect_key($index, $dejaTraduit)), count($jsEnDur),
+printf("%d phrases, %d déjà traduites, %d traduites par leur module, %d comparées dans du JS (à trier), %d à traduire en %d fichier(s).\n",
+    count($index), count(array_intersect_key($index, $dejaTraduit)),
+    count(array_diff_key($index, $besoin, $dejaTraduit)), count($jsEnDur),
     array_sum(array_map('count', $listes)), count($listes));

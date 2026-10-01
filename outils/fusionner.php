@@ -12,14 +12,16 @@ declare(strict_types=1);
 require __DIR__ . '/autoload.php';
 
 use Maxcode\LanguagePack\Outils\Csv;
+use Maxcode\LanguagePack\Outils\Verificateur;
 
 $base = __DIR__ . '/a-traduire';
-$dansLePack = [];
+$dansLePack = []; // cle => fichier du pack
 foreach (glob(dirname(__DIR__) . '/*.csv') ?: [] as $f) {
     foreach (Csv::lire($f) as $e) {
-        $dansLePack[$e['cle']] = true;
+        $dansLePack[$e['cle']] = basename($f);
     }
 }
+$utiles = [];     // cle => true : a traduire sur au moins un site
 $listes = [];
 $index = [];
 $js = [];
@@ -28,7 +30,11 @@ foreach (glob("$base/sites/*", GLOB_ONLYDIR) ?: [] as $site) {
         $editeur = basename($f, '.csv');
         $h = fopen($f, 'rb');
         while (($l = fgetcsv($h, 0, ',', '"', '')) !== false) {
-            if ($l === [null] || count($l) < 4 || isset($dansLePack[$l[0]])) {
+            if ($l === [null] || count($l) < 4) {
+                continue;
+            }
+            $utiles[$l[0]] = true;
+            if (isset($dansLePack[$l[0]])) {
                 continue;
             }
             $actuelle = $listes[$editeur][$l[0]] ?? null;
@@ -79,4 +85,19 @@ foreach ($index as $l) {
 fclose($h);
 ksort($js);
 file_put_contents("$base/js-en-dur.txt", implode("\n", array_keys($js)) . "\n");
+
+// Cles du pack devenues inutiles : vues sur un site (dans l'index) mais a
+// traduire nulle part, parce que le communautaire ou le module qui les
+// utilise les traduit. Les cles hors index (reprises sans source connue) et
+// les corrections du communautaire restent. outils/elaguer.php les retire.
+$h = fopen("$base/inutiles.csv", 'wb');
+$inutiles = 0;
+foreach ($dansLePack as $cle => $fichier) {
+    if ($fichier !== Verificateur::CORRECTIONS && isset($index[$cle]) && !isset($utiles[$cle])) {
+        fputcsv($h, [(string) $cle, $fichier], ',', '"', '', "\n");
+        $inutiles++;
+    }
+}
+fclose($h);
 printf("Index : %d phrases ; %d chaînes comparées dans du JS, à trier (outils/a-traduire/js-en-dur.txt).\n", count($index), count($js));
+printf("%d clé(s) du pack devenue(s) inutile(s) (outils/a-traduire/inutiles.csv, à retirer avec outils/elaguer.php).\n", $inutiles);

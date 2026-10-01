@@ -75,6 +75,21 @@ final class VerificateurTest extends TestCase
         );
     }
 
+    public function testLeFichierDeCorrectionsSurchargeLeCommunautaire(): void
+    {
+        $f = $this->fichier(Verificateur::CORRECTIONS, "\"Translated by community\",\"Traduit par la communauté, corrigé\"\n");
+        self::assertSame([], $this->regles([Verificateur::CORRECTIONS => $f]));
+    }
+
+    public function testUneCorrectionSansObjetEstUneErreur(): void
+    {
+        $f = $this->fichier(Verificateur::CORRECTIONS,
+            "\"Not in community\",\"Absente du communautaire\"\n"            // a ranger chez l'editeur
+            . "\"Translated by community\",\"Traduit par la communauté\"\n"  // correction integree en amont
+        );
+        self::assertSame(['correction-integree', 'correction-sans-objet'], $this->regles([Verificateur::CORRECTIONS => $f]));
+    }
+
     public function testDoublonDansUnFichierEtEntreFichiers(): void
     {
         $a = $this->fichier('amasty.csv', "\"Hello\",\"Bonjour\"\n\"Hello\",\"Salut\"\n");

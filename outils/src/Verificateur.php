@@ -10,6 +10,12 @@ namespace Maxcode\LanguagePack\Outils;
 final class Verificateur
 {
     /**
+     * Seul fichier autorise a surcharger le pack communautaire : ses fautes
+     * averees, chacune signalee en amont (docs/corrections-communautaire.md).
+     */
+    public const CORRECTIONS = 'corrections-communautaire.csv';
+
+    /**
      * @param array<string, string> $communautaire cle => traduction du pack communautaire
      * @param list<string> $interdites
      * @param list<string> $identiquesAutorises
@@ -57,7 +63,14 @@ final class Verificateur
                     $constats[] = $erreur('vide', 'traduction vide');
                     continue;
                 }
-                if (isset($this->communautaire[$cle]) && $this->communautaire[$cle] !== $cle) {
+                $traduiteParLeCommunautaire = isset($this->communautaire[$cle]) && $this->communautaire[$cle] !== $cle;
+                if ($nom === self::CORRECTIONS) {
+                    if (!$traduiteParLeCommunautaire) {
+                        $constats[] = $erreur('correction-sans-objet', 'le pack communautaire ne la traduit pas : la ranger dans le fichier de l’éditeur');
+                    } elseif ($this->communautaire[$cle] === $trad) {
+                        $constats[] = $erreur('correction-integree', 'le pack communautaire a intégré la correction : la retirer');
+                    }
+                } elseif ($traduiteParLeCommunautaire) {
                     $constats[] = $erreur('communautaire', 'déjà traduite par le pack communautaire');
                 }
                 if ($trad === $cle && !in_array($cle, $this->identiquesAutorises, true)) {
