@@ -1,0 +1,9 @@
+ each and 
+Buy %1 for 
+Error when applied preselect product
+Error when get product from urls
+IN STOCK
+No shipping Address available
+OUT OF STOCK
+Order Status: 
+Re-Order

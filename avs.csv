@@ -1,0 +1,5 @@
+"Display attribute code for each field in the product edit","Afficher le code d’attribut de chaque champ dans la modification du produit"
+"Display path for each option in system configuration","Afficher le chemin de chaque option dans la configuration système"
+"Path: <code>%1</code>","Chemin : <code>%1</code>"
+"Store <code>%1</code>: ""%2""","Magasin <code>%1</code> : « %2 »"
+"Website <code>%1</code>: ""%2""","Site web <code>%1</code> : « %2 »"
