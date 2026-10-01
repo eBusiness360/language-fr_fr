@@ -431,11 +431,6 @@
 "Visible Menu Depth","Profondeur de menu visible"
 "Welcome","Bienvenue"
 "Wide (Default)","Large (par défaut)"
-"You can get an API key from <a href=""https://developers.google.com/maps/documentation/javascript/get-api-key"">https://developers.google.com/maps/documentation/javascript/get-api-key</a><br/>
-                    eg: AIzaSyCkw3Q5Y7y2prqgTXSvF50Nr09-j7_carc</br>
-                    This is an example key for localhost.","Vous pouvez obtenir une clé d’API sur <a href=""https://developers.google.com/maps/documentation/javascript/get-api-key"">https://developers.google.com/maps/documentation/javascript/get-api-key</a><br/>
-                    ex. : AIzaSyCkw3Q5Y7y2prqgTXSvF50Nr09-j7_carc</br>
-                    Ceci est une clé d’exemple pour localhost."
 "Your Cart","Votre panier"
 "Your Checkout Progress","Avancement de votre commande"
 "Your Store","Votre boutique"

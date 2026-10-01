@@ -96,6 +96,16 @@ final class VerificateurTest extends TestCase
         self::assertSame(['espaces-bord'], $this->regles(['core.csv' => $f]));
     }
 
+    public function testUnSecretDansLaCleOuLaTraductionEstUneErreur(): void
+    {
+        // Le depot est public : une cle d'API presente dans un texte d'aide
+        // d'un module (meme « d'exemple ») declenche l'alerte de GitHub.
+        // Construite a l'execution : une cle litterale ici declencherait l'alerte elle-meme.
+        $cle = 'AIza' . str_repeat('x', 35);
+        $f = $this->fichier('core.csv', "\"Example $cle\",\"Exemple $cle\"\n");
+        self::assertSame(['secret'], $this->regles(['core.csv' => $f]));
+    }
+
     public function testDoublonDansUnFichierEtEntreFichiers(): void
     {
         $a = $this->fichier('amasty.csv', "\"Hello\",\"Bonjour\"\n\"Hello\",\"Salut\"\n");

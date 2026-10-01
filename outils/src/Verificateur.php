@@ -16,6 +16,13 @@ final class Verificateur
     public const CORRECTIONS = 'corrections-communautaire.csv';
 
     /**
+     * Formes de secrets que GitHub detecte : cle d'API Google, cle AWS, jetons
+     * GitHub, Slack et Stripe. Un module peut en citer une « d'exemple » dans
+     * un texte d'aide, qui devient alors une cle de traduction.
+     */
+    private const SECRET = '/AIza[0-9A-Za-z_\-]{35}|AKIA[0-9A-Z]{16}|gh[pousr]_[0-9A-Za-z]{36}|xox[abposr]-[0-9A-Za-z-]{10,}|[sr]k_live_[0-9A-Za-z]{16,}/';
+
+    /**
      * @param array<string, string> $communautaire cle => traduction du pack communautaire
      * @param list<string> $interdites
      * @param list<string> $identiquesAutorises
@@ -78,6 +85,9 @@ final class Verificateur
                 }
                 if (in_array($cle, $this->interdites, true)) {
                     $constats[] = $erreur('interdite', 'chaîne comparée en dur dans du JavaScript');
+                }
+                if (preg_match(self::SECRET, $cle . "\n" . $trad)) {
+                    $constats[] = $erreur('secret', 'clé d’API ou jeton (le dépôt est public) : laisser cette chaîne hors du pack');
                 }
                 if (self::bords($cle) !== self::bords($trad)) {
                     $constats[] = $erreur('espaces-bord', 'espaces de début ou de fin différents de la clé (fragment recollé à une autre chaîne)');
