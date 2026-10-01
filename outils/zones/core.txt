@@ -1,0 +1,430 @@
+"%1" is not a valid file path
+"%1" precision has to be between -1 and 30.
+"%2" is an invalid format of "%1" group. Verify the format and try again.
+%1 already exist.
+%1 already exists.
+%1 doesn't extend \Magento\Framework\Data\Form
+%1 doesn't extends \Magento\Framework\Search\Dynamic\Algorithm\AlgorithmInterface
+%1 doesn't implement ThemeInterface
+%1 doesn't implement \Magento\Framework\DB\MapperInterface
+%1 doesn't implement \Magento\Framework\DB\QueryInterface
+%1 indexer does not exist.
+%1 isn't allowed
+%1 operator not supported
+%1 should be an iterator
+A [y]es or [n]o selection needs to be made. Select and try again.
+A custom attribute is specified with a missing attribute code. Verify the code and try again.
+A cycle was found. The "%1" filter is already used in the request hierarchy.
+A cycle was found. The "%1" query is already used in the request hierarchy.
+A scope code is missing. Enter a code and try again.
+A scope is missing. Enter a scope and try again.
+A symlink for "%1" can't be created and placed to "%2". %3
+Add New Card
+Allowed HTML attributes are: %1
+Allowed HTML attributes for tag "%1" are: %2
+Allowed HTML tags are: %1
+An array expected: %1
+An associative key can't be the same as its parent associative key. Verify and try again.
+An element with a "%1" ID already exists.
+An element with a "%1" ID is already defined.
+An empty custom attribute is specified. Enter the attribute and try again.
+An error occurred during "%1" fileClose execution.
+An error occurred during "%1" filePutCsv execution.
+An error occurred with the UI component. Each component needs context. Verify and try again.
+An error occurred. Refresh the page and try again.
+An error occurred. Use non-numeric array root keys and try again.
+Are you sure you want to leave the page?
+Are you sure you want to remove all items from your shopping cart?
+Area code "%1" does not exist
+Area code is already set
+Area code is not set
+Area code not set: Area code must be set before starting a session.
+Argument 'value' must be type of string, %1 given.
+Argument type duplication in class %1 in %2%3%4
+Associative and numeric keys can't be mixed at one level. Verify and try again.
+Attribute "%attribute_code" has invalid value. %details
+Authentication Failed. Please try again with another form of payment.
+Backups directory is not writeable
+Bad root directory
+Can't get contents from: %1
+Can't scan dir: %1
+Can't support nested operators
+Can`t read foreign keys from current database
+Cancel Order
+Cancel order
+Cannot acquire a lock.
+Cannot create the directory for locks: %1
+Cannot find columns for internal index
+Cannot flush the "%1" file. %2
+Cannot recognize image extension.
+Cannot render error message!
+Cannot validate payment.
+Cannot verify that the lock exists.
+Cannot write to the "%1" file. %2
+Cant create backups directory
+Card Description
+Card Expiration Date
+Card Information
+Card Security Code
+Card Security Number
+Card vaulted successfully. Please wait to be redirected to the Stored Payment Methods page.
+Category -- Full Width
+Changes you made to the cart will not be saved.
+Circular dependency references from '%indexerId' to '%relatedIndexerId'.
+City is required.
+Click <a href="%1">here</a> if nothing has happened
+Column %1 does not exist for index/constraint %2 in table %3.
+Command returned non-zero exit code:\n`%1`
+Confirm Your %store_name Order Cancellation
+Constraint "%1" references table that does not exist.
+Consumer "%consumer" has not connection.
+Consumer %consumer_id is not authorized to access %resources
+Consumer '%consumer' is not declared.
+Content-Type header is empty.
+Content-Type header is invalid.
+Converter [%name] must implement Magento\Framework\Config\ConverterInterface
+Cookies are disabled in your browser.
+Could not append time to DateTime
+Could not locate schema: '%1' at '%2'
+Could not read config file
+CreditCard Vault is not available.
+Currency "%1" not found
+Current implementation not supported this type (%1) of backup.
+Custom processor for field "%1" is absent.
+Custom processor must implement "%1".
+Data in topic "%topic" must be of type "%expectedType". "%actualType" given.
+Data item corresponding to "%param" must be specified in the message with topic "%topic".
+Decoding Error: %1
+Decoding error.
+Decoding error: %1%2%3%4
+Delete operation is forbidden for current area
+Dependency declaration '%relatedIndexerId' in '%indexerId' to the non-existing indexer.
+Directory "%1" cannot be created %2
+Element ID must not be numeric: '%1'.
+Element name and destination must be specified.
+Email not confirmed
+Empty identifier field name
+Empty main table name
+Encryption key must be 32 character string without any white space.
+Enter your billing address to get a tax estimate.
+Enter your destination to get a shipping estimate.
+Enum type "%1" not defined
+Error during saving of crontab: %1
+Error happened when processing the request. Please try again later.
+Error initializing Payment SDK, please reload the page and try again.
+Error occurred during "%field_name" processing. %details
+Error occurred during message decoding.
+Error rendering Payment SDK, please reload the page and try again.
+Error while checking if topic "%topic" is synchronous
+Error while vaulting the card, please try again.
+Exception successfully thrown
+Failed creating lock %1
+Failed creating the path %1
+Failed to create backup
+Failed to create directory %1
+Failed to find config manager for "%typeId".
+Failed to place order. Try again or refresh the page if that does not resolve the issue.
+Failed to read data from %1
+Failed to set billing address
+Failed to upload file %1 to ftp
+Failed to validate ftp account
+Field title can't be empty
+File "%1" cannot be opened %2
+File "%1" does not exist.
+File '%system' cannot be found
+File already exists
+File not opened
+Filter already exists in Criteria object: %1
+HTML ID or class will not have effect, if HTML tag is not specified.
+HTML attribute "style" contains restricted styles
+Helper arguments should not be used in custom layout updates.
+Html tag "%1" is forbidden for usage in containers. Consider to use one of the allowed: %2.
+Image can not be saved.
+Incompatible argument type: Required type: %1. Actual type: %2; File: %3%4%5
+Incompatible parameter type [%1 $%2] in %3::%4. It must be compatible with %5
+Incorrect argument sequence in class %1 in %2%3Required: $%4%5Actual  : $%6%7
+Incorrect format of request URI or Requested services are missing.
+Incorrect interface in %1. There is no method [ %2 ] in %3 interface
+Init vector must be a string of %1 bytes.
+Instance is not set yet.
+Internal Error. Details are available in Magento log file. Report ID: %1
+Invalid Block class name: %1
+Invalid Data Source class name: %1
+Invalid Document %1%2
+Invalid Document: %1%2 Error: %3
+Invalid HTML content provided
+Invalid URL '%value%'.
+Invalid XML-file: %1%2%3
+Invalid [%1] $%2 type in %3::%4. It must be compatible with %5
+Invalid [%1] $%2 type in %3::%4. It must be compatible with \\Closure
+Invalid attribute for %1
+Invalid combination mode: %1
+Invalid configuration file: '%1'
+Invalid constructor argument(s) in %1
+Invalid data type
+Invalid image file type.
+Invalid input date format "%1"
+Invalid input datetime format of value "%1"
+Invalid layout update handle
+Invalid method signature. Invalid method parameters count in %1::%2
+Invalid parameter given. A valid $fileId[tmp_name] is expected.
+Invalid range given.
+Invalid request logger type: %1
+Invalid request received
+Invalid tag
+Invalid type of theme domain model "%1"
+Invalid value for the node <slab_size>. Expected to be positive integer.
+It seems that you'd like to cancel your order #%order_id. If this is correct, please <a href="%guest_order_url" target="_blank">click here</a> to confirm your cancellation request.
+Key collision '%1' is already defined.
+Key must not exceed %1 bytes.
+Layout must be initialized
+Leave
+Location Details
+Max Aliases in query should be %1 but got %2.
+Max query complexity should be %1 but got %2.
+Maximum SearchCriteria pageSize is %max
+Maximum items of type "%type" is %max
+Maximum pageSize is %max
+Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: %1; Allocated memory size: %2 bytes; InnoDB buffer pool size: %3 bytes.
+Message from %sender_name:
+Message has been rejected: %message
+Message queue publisher "%publisher" is not configured.
+Message queue topic "%topic" is not configured.
+Message with period.
+Message with topic "%topic" must be an instance of "%class".
+Missed Mapper Interface for Criteria Interface: %1
+Missed required argument %1 in parent::__construct call. File: %2
+Model collection resource name is not defined.
+More than one node matching the query: %1, Xml is: %2
+Multiple queries can't be executed. Run a single query and try again.
+Nesting "OR" node type not supported
+No bindings configured for the "%topic" topic at "%exchange" exchange.
+No currency defined
+No exchange service not work
+No mapping to Webonyx type is declared for '%1' config element type.
+No region found within the locale "%1"
+No reply message resulted in RPC.
+Not enough permissions to read files for backup
+Not implemented
+Not supported cipher version
+Object DOMDocument should be created.
+Object already exists in registry (%1). Old object class: %2, new object class: %3
+One or more input exceptions have occurred while processing bulk.
+One or more input exceptions have occurred.
+Or add a new address below
+Or proceed with the standard checkout
+Order results
+Our hours are <span class="no-link">%store_hours</span>.
+Page -- Full Width
+Patch %1 should implement DataPatchInterface
+Path "%1" cannot be used with directory "%2"
+Pay with Apple Pay
+Pay with Google Pay
+Pay with credit card
+Payment method is not eligible
+Pick in Store
+Please correct the XML data and try again. %value%
+Please correct the XSD data and try again.
+Please correct the XSD data and try again. %value%
+Please define flag code.
+Please enter a valid credit card security code.
+Please feel free to pickup your order now.
+Please provide postcode or city name to find nearest pickup locations.
+Processed schema file is not valid.
+Processed schema file: %1
+Product -- Full Width
+Property 'message_id' not found in properties.
+Provide a cancellation reason:
+Publisher '%publisher' is not declared.
+Query length exceeds maximum allowed length of %1 characters. Actual length: %2 characters.
+Read-only property cannot be changed.
+Reader [%name] must implement Magento\Framework\Config\ReaderInterface
+Redirecting...
+Request method is invalid.
+Request name '%1' doesn't exist.
+Required PHP extension 'Imagick' was not loaded.
+Save New Card
+Scope separator "::" cannot be used without scope identifier.
+Search with postcode or city name...
+Secure transaction
+Securely store your credit card information for future use.
+Select Other
+Select a saved address
+Selected shipping method is not available. Please select another shipping method for this order.
+Server cannot match any of the given Accept HTTP header media type(s) from the request: "%1" with media types from the config of response renderer.
+Server cannot understand Content-Type HTTP header media type %1
+Server internal error. See details in report api/%1
+Signature method %1 is not supported
+Skip to page %1
+Some error has occurred.
+Something went wrong while connecting to the host. Error#%1 - %2.
+Sort order field %1 contains restricted symbols
+Source class "%1" for "%2" generation does not exist.
+Specified consumer "%consumer" is not declared.
+Specified topic "%topic" is not declared.
+Stored Cards
+Stream get line failed %1
+Street Address: Line %1
+Sub nesting of %1 is not supported
+Table %1 does not exist
+Table status for %1 is incorrect. Can`t fetch version id.
+The "%1" Oauth version isn't supported.
+The "%1" block threw an exception, and it can't be rendered.
+The "%1" deployment config file isn't writable.
+The "%1" doesn't have "%2" as parent, causing the parent-child relation to break. Verify and try again.
+The "%1" field name is unknown. Verify the field name and try again.
+The "%1" file can't be deleted. %2
+The "%1" file failed to open.
+The "%1" file or directory can't be touched. %2
+The "%1" format of children is invalid. Verify and try again.
+The "%1" is not a child of "%2". Resolve the issue and try again.
+The "%1" is not in the nested set of "%2", causing the parent-child relation to break. Verify and try again.
+The "%1" message code was already processed.
+The "%1" scope can't include a scope code. Try again without entering a scope code.
+The "%1" session value is invalid. Verify and try again.
+The "%1" strategy code is unknown. Verify the code and try again.
+The "%1" value doesn't exist. Enter another value and try again.
+The "%1" was incorrectly set as a child to itself. Resolve the issue and try again.
+The "%3" cannot be set as child to "%1" because "%1" is a parent of "%2" recursively. Resolve the issue and try again.
+The "%exchange" exchange is not declared for the "%connection" connection. Verify and try again.
+The "%serviceMethod" service method must match the "%pattern" pattern.
+The "%value" value's type is invalid. The "%type" type was expected. Verify and try again.
+The "componentType" configuration parameter is required for the "%1" component.
+The "db object" isn't set in config. Set the "db object" and try again.
+The %1 HTTP method is not supported.
+The %fieldName value of "%value" must be greater than or equal to %minValue.
+The Date of Birth should not be greater than today.
+The DateTime object timezone needs to be the same as the "%1" timezone in config.
+The FTP connection couldn't be established because of an invalid host or port.
+The RPC (Remote Procedure Call) failed. The connection timed out after %time_out. Please try again later.
+The array of fields failed to pass. The array must include at one field.
+The bucket type is invalid. Verify and try again.
+The card security code is a three or four digit number printed on a credit card. Visa, Mastercard, and Discover cards have a three digit code on the card back. American Express cards have a four digit code on the card front.
+The columns for UPDATE statement are not defined
+The command shouldn't be empty. Enter and try again.
+The configuration for the "%1" type is incorrect. Verify the type and configuration and try again.
+The connection is invalid. Verify the connection and try again.
+The contents from the "%1" file can't be read. %2
+The cookie with "%name" cookieName couldn't be deleted.
+The cookie with "%name" cookieName couldn't be sent. Please try again later.
+The data failed to write to "%1".
+The database storage table doesn't exist. Verify the table and try again.
+The directory "%1" cannot be deleted %2
+The download URL is incorrect. Verify and try again.
+The element "%1" can't have a child because "%1" already has a child with alias "%2".
+The element "%1" can't have a parent because "%2" is already the parent of "%1".
+The element "%1" is already a child of "%2".
+The encryption key can't be empty. Enter the key and try again.
+The exec function is disabled.
+The field array failed to pass. The array must have a matching condition array.
+The file "%1" already exists
+The file or directory "%1" cannot be copied to "%2" %3
+The file transfer mode is invalid. Verify and try again.
+The following patterns didn't return any result:\n%1
+The format is not supported
+The format type is invalid. Verify the format type and try again.
+The header provider is invalid. Verify and try again.
+The host needs to be a non-empty string.
+The image content must be valid base64 encoded data.
+The list of tasks is empty. Add tasks and try again.
+The node information is empty. Enter the information and try again.
+The order was not successful!
+The path "%1" cannot be renamed into "%2" %3
+The path "%1" is not writable.
+The path is invalid. Verify and try again.
+The path needs to be a non-empty string.
+The permissions can't be changed for the "%1" path. %2.
+The query is invalid. Verify the query and try again.
+The reference already exists: %1. New index: %2, old index: %3
+The request query and filters aren't set. Verify the query and filters and try again.
+The resource isn't set.
+The rollback can't be executed because not all files are writable.
+The rollback file doesn't exist. Verify the file and try again.
+The rollback file is invalid. Verify the file and try again.
+The root element can't be empty or use numbers. Change the element and try again.
+The row couldn't be updated because a foreign key constraint failed. Verify the constraint and try again.
+The scope code can include only letters (a-z), numbers (0-9) and underscores (_). Also, the first character must be a letter.
+The select object must have the correct "FROM" part. Verify and try again.
+The selected shipping address is not available to be used. Please enter a new one.
+The signature is invalid. Verify and try again.
+The sort order has to be specified as %1 for ascending order or %2 for descending order.
+The sort order has to be specified as a string, got %1.
+The specified "%1" file couldn't be written. %2
+The specified host is empty. Set the host and try again.
+The store will not work correctly when cookies are disabled.
+The transition year isn't included in the system date range. Verify the year date range and try again.
+The username or password is invalid. Verify both and try again.
+The write connection to the database isn't available. Please try again later.
+Theme layout update file '%1' is not valid.\n%2
+Theme layout update file '%1' must not declare page types.
+Theme type can't be empty
+Theme type is invalid
+There has been an error with import
+There is an error. Please Contact store administrator.
+This class must implement the "CompilerInterface"
+This class must implement the "ResultInterface"
+This class needs to inherit from a class "Template". Verify the class and try again.
+This payment option is currently unavailable.
+Topic "%topic" is not configured.
+Total incl. tax
+Transition year is out of specified date range.
+Trigger %1 has not statements available
+Trigger event is not defined
+Trigger name is not defined
+Trigger name should be a string
+Trigger statement should be a string
+Trigger table name is not defined
+Trigger table name should be a string
+Trigger time is not defined
+Trigger unsupported event type
+Trigger unsupported time type
+Trying to override modular view file '%1' for theme '%2', which is not ancestor of theme '%3'
+Type (%1) is unknown
+Type Error occurred when creating object: %type, %msg
+UTF-8 is the only supported charset.
+Unable to apply data patch %1 for module %2. Original exception message: %3
+Unable to apply patch %1 for module %2. Original exception message: %3
+Unable to create watermark.
+Unable to find a physical ancestor for a theme '%1'.
+Unable to list current working directory.
+Unable to list current working directory. Access forbidden.
+Unable to send the cookie. Maximum number of cookies would be exceeded.
+Unable to send the cookie. Size of '%name' is %size bytes.
+Unable to set target directory.
+Unable to validate ftp account
+Undefined filter group "%1" passed in.
+Unknown directory type: '%1'
+Unknown display "%1"
+Unknown locks provider: %1
+Unknown position "%1"
+Unsupported format of schema location: '%1'
+Unsupported image format. File: %1
+Updater model should not be used in custom layout updates.
+Uploaded image is not valid
+VAT
+Value "%1" has to be numeric
+Value of uid "%1" is incorrect.
+View's identifier is not set
+We could not preselect pickup location based on available information, please select it manually.
+We were unable to find nearby locations for provided search query.
+We'll email you an order and pick-up confirmation with details.
+We’re unable to take that order right now.
+Wrong format handler type
+You are logged in.
+You don't have permissions to read the "%1" file.
+You don't have permissions to write to the "%1" file.
+You don't have the permissions to open the "%1" file for writing access.
+You need write permissions for: %1
+Your %store_name order is ready for pickup
+Your Order <span class="no-link">#%increment_id</span> is complete
+Your billing address is not valid.
+Your operating system is not supported to work with this command
+Your order placed from %store_name is ready for pickup.
+Your payment was not successful. Ensure you have entered your details correctly and try again, or try a different payment method. If you have continued problems, contact the issuing bank for your payment method.
+Your payment was not successful. Please try again later.
+Your payment was not successful. Try again.
+Zookeeper connection timed out!
+db object does not implement \Magento\Framework\DB\Adapter\AdapterInterface
+dbModel read resource does not implement \Magento\Framework\DB\Adapter\AdapterInterface
+error when writing file config file
+php extension Zookeeper is not installed.
