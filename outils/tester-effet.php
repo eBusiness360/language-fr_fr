@@ -60,10 +60,15 @@ foreach (glob("$pack/*.csv") ?: [] as $f) {
     }
 }
 
+$etat = $om->get(\Magento\Framework\App\State::class);
 foreach (['frontend', 'adminhtml'] as $aire) {
-    $t = $om->create(\Magento\Framework\Translate::class);
-    $t->setLocale($langue->locale)->loadData($aire, true);
-    $donnees = $t->getData();
+    // Les traductions de theme exigent une aire : on l'emule le temps du chargement.
+    $donnees = $etat->emulateAreaCode($aire, static function () use ($om, $langue, $aire): array {
+        $t = $om->create(\Magento\Framework\Translate::class);
+        $t->setLocale($langue->locale)->loadData($aire, true);
+
+        return $t->getData();
+    });
     foreach ($temoins as $fichier => $e) {
         $obtenu = $donnees[$e['cle']] ?? '(absente)';
         $ok = $obtenu === $e['traduction'];
