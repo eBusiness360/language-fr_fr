@@ -11,7 +11,7 @@ declare(strict_types=1);
  *   2. pour CHAQUE fichier du pack, une chaine temoin ressort avec notre
  *      traduction en frontend et en adminhtml ;
  *   3. aucune cle du pack n'est traduite par le pack communautaire INSTALLE
- *      sur ce site (sinon nous l'ecraserions).
+ *      sur ce site (sinon nous l'ecraserions), hors corrections-communautaire.csv.
  */
 require __DIR__ . '/autoload.php';
 require getcwd() . '/app/bootstrap.php';
@@ -20,6 +20,7 @@ use Magento\Framework\App\Bootstrap;
 use Magento\Framework\Component\ComponentRegistrar;
 use Maxcode\LanguagePack\Outils\Csv;
 use Maxcode\LanguagePack\Outils\Langue;
+use Maxcode\LanguagePack\Outils\Verificateur;
 
 $langue = Langue::charger();
 $om = Bootstrap::create(BP, $_SERVER)->getObjectManager();
@@ -53,6 +54,10 @@ foreach (glob("$pack/*.csv") ?: [] as $f) {
         $temoins[basename($f)] = $entrees[0];
     }
     foreach ($entrees as $e) {
+        // Les corrections du communautaire le surchargent volontairement.
+        if (basename($f) === Verificateur::CORRECTIONS) {
+            continue;
+        }
         if (isset($communautaire[$e['cle']]) && $communautaire[$e['cle']] !== $e['cle']) {
             printf("ÉCHEC : %s écrase le communautaire installé — « %s »\n", basename($f), mb_substr($e['cle'], 0, 60));
             $echecs++;

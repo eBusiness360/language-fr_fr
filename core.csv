@@ -14,7 +14,7 @@
                         <p>0 - fixe l’arrière-plan par rapport à la fenêtre (aucun défilement).</p>
                         <p>1 - l’arrière-plan défile à la même vitesse que la fenêtre.</p>
 
-"
+                    "
 "
                         
                         <p>Grid Size determines the maximum number of columns available.</p>
@@ -25,7 +25,7 @@
                         <p>La taille de grille détermine le nombre maximal de colonnes disponibles.</p>
                          <p>Choisissez une valeur entre 2 et la valeur du paramètre Taille maximale de la grille de colonnes de la configuration Gestion du contenu.</p>
                         
-"
+                    "
 "
                         
                         <p>Parallax Speed controls how the background will behave when page is scrolled.</p>
@@ -42,7 +42,7 @@
                         <p>0 - fixe l’arrière-plan par rapport à la fenêtre (aucun défilement).</p>
                         <p>1 - l’arrière-plan défile à la même vitesse que la fenêtre.</p>
                         
-"
+                    "
 "
                         
                         <p>Style changes will only affect this breakpoint</p>
@@ -51,7 +51,7 @@
                         
                         <p>Les modifications de style ne s’appliquent qu’à ce point de rupture</p>
                         
-"
+                    "
 "
                             
                                 <p>The products displayed may vary from this total due to several factors, including but not limited to:</p>
@@ -72,37 +72,37 @@
                                     <li>affectation au site web</li>
                                 </ul>
                             
-"
+                        "
 "
                             Allowable values: ""paypal"", ""primary"" (default), your_custom_value (a custom payment page style from your merchant account profile).
                         ","
                             Valeurs autorisées : « paypal », « primary » (par défaut), your_custom_value (un style de page de paiement personnalisé défini dans le profil de votre compte marchand).
-"
+                        "
 "
                             The background color for the checkout page around the header and payment form.
                         ","
                             Couleur de fond de la page de paiement autour de l’en-tête et du formulaire de paiement.
-"
+                        "
 "
                             The background color for the header of the checkout page. Case-insensitive six-character HTML hexadecimal color code in ASCII.
                         ","
                             Couleur de fond de l’en-tête de la page de paiement. Code couleur HTML hexadécimal à six caractères en ASCII, insensible à la casse.
-"
+                        "
 "
                             The image at the top left of the checkout page. Max size is 750x90-pixel. <strong class=""colorRed"">https</strong> is highly encouraged.
                         ","
                             Image en haut à gauche de la page de paiement. Taille maximale : 750x90 pixels. Le <strong class=""colorRed"">https</strong> est vivement recommandé.
-"
+                        "
 "
                             Will appear as a payment option only for customers who have at least one active billing agreement.
                         ","
                             S’affiche comme moyen de paiement uniquement pour les clients ayant au moins un accord de facturation actif.
-"
+                        "
 "
                         <a href=""http://www.magentocommerce.com/paypal"">Start accepting payments via PayPal!</a>
                     ","
                         <a href=""http://www.magentocommerce.com/paypal"">Acceptez les paiements PayPal dès maintenant !</a>
-"
+                    "
 "
                         <p>We’ll try to show it again the next time you sign in to Magento Admin.</p>
                         <p>To learn more about new features, see our latest Release Notes in
@@ -121,7 +121,7 @@
                         Base currency is used for all online payment transactions. The base currency scope is defined by the catalog price scope (""Catalog"" > ""Price"" > ""Catalog Price Scope"").
                     ","
                         La devise de base est utilisée pour toutes les transactions de paiement en ligne. Sa portée est définie par la portée des prix du catalogue (« Catalogue » > « Prix » > « Portée des prix du catalogue »).
-"
+                    "
 "
                         List of layout files with an update handle ""selectable""
                         matching *PageIdentifier*_*UpdateID*.
@@ -132,31 +132,31 @@
                         correspond à *PageIdentifier*_*UpdateID*.
                         <br/>
                         Pour plus d’informations, consultez la documentation Magento
-"
+                    "
 "
                         Merchants need to apply to PayPal for enabling billing agreements feature. Do not enable this option until PayPal confirms that billing agreements are enabled for your merchant account.
                     ","
                         Les marchands doivent demander à PayPal l’activation des accords de facturation. N’activez pas cette option avant que PayPal ait confirmé leur activation pour votre compte marchand.
-"
+                    "
 "
                         Semicolon (;) separated values.<br/>Leave empty for open text field.
                     ","
                         Valeurs séparées par des points-virgules (;).<br/>Laissez vide pour un champ de texte libre.
-"
+                    "
 "
                         This email will be sent instead of the Default Welcome Email, after account confirmation. <br /><br />
                         Email template chosen based on theme fallback when ""Default"" option is selected.
                     ","
                         Cet e-mail est envoyé à la place de l’e-mail de bienvenue par défaut, après la confirmation du compte. <br /><br />
                         Le modèle d’e-mail est choisi selon la hiérarchie des thèmes lorsque l’option « Par défaut » est sélectionnée.
-"
+                    "
 "
                         This email will be sent instead of the Default Welcome Email, if a customer was created without password. <br /><br />
                         Email template chosen based on theme fallback when ""Default"" option is selected.
                     ","
                         Cet e-mail est envoyé à la place de l’e-mail de bienvenue par défaut, si le client a été créé sans mot de passe. <br /><br />
                         Le modèle d’e-mail est choisi selon la hiérarchie des thèmes lorsque l’option « Par défaut » est sélectionnée.
-"
+                    "
 "
                     <a href=""https://financing.paypal.com/ppfinportal/content/whyUseFinancing"" target=""_blank"">Why Advertise Financing?</a><br/>
                                             <strong>Give your sales a boost when you advertise financing.</strong><br/>PayPal helps turn browsers into buyers with financing
@@ -171,7 +171,7 @@
                                             Utilisez les bannières gratuites de PayPal pour présenter le financement PayPal Credit&#174; comme moyen de paiement lorsque vos clients paient avec PayPal.
                                             Le programme publicitaire PayPal génère des achats supplémentaires et augmente le panier moyen des consommateurs de 15%
                                             ou plus. <a href=""https://financing.paypal.com/ppfinportal/content/forrester"" target=""_blank"">Voir les détails</a>.
-"
+                "
 "
                     <a href=""https://financing.paypal.com/ppfinportal/content/whyUseFinancing"" target=""_blank"">Why Advertise Financing?</a><br/>
                                 <strong>Give your sales a boost when you advertise financing.</strong><br/>PayPal helps turn browsers into buyers with financing
@@ -186,7 +186,7 @@
                                 Utilisez les bannières gratuites de PayPal pour présenter le financement PayPal Credit&#174; comme moyen de paiement lorsque vos clients paient avec PayPal.
                                 Le programme publicitaire PayPal génère des achats supplémentaires et augmente le panier moyen des consommateurs de 15%
                                 ou plus. <a href=""https://financing.paypal.com/ppfinportal/content/forrester"" target=""_blank"">Voir les détails</a>.
-"
+                "
 "
                     <a href=""https://financing.paypal.com/ppfinportal/content/whyUseFinancing"" target=""_blank"">Why Advertise Financing?</a><br/>
                             <strong>Give your sales a boost when you advertise financing.</strong><br/>PayPal helps turn browsers into buyers with financing
@@ -201,7 +201,7 @@
                             Utilisez les bannières gratuites de PayPal pour présenter le financement PayPal Credit&#174; comme moyen de paiement lorsque vos clients paient avec PayPal.
                             Le programme publicitaire PayPal génère des achats supplémentaires et augmente le panier moyen des consommateurs de 15%
                             ou plus. <a href=""https://financing.paypal.com/ppfinportal/content/forrester"" target=""_blank"">Voir les détails</a>.
-"
+                "
 "
                     <a href=""https://financing.paypal.com/ppfinportal/content/whyUseFinancing"" target=""_blank"">Why Advertise Financing?</a><br/>
                         <strong>Give your sales a boost when you advertise financing.</strong><br/>PayPal helps turn browsers into buyers with financing
@@ -216,19 +216,19 @@
                         Utilisez les bannières gratuites de PayPal pour présenter le financement PayPal Credit&#174; comme moyen de paiement lorsque vos clients paient avec PayPal.
                         Le programme publicitaire PayPal génère des achats supplémentaires et augmente le panier moyen des consommateurs de 15%
                         ou plus. <a href=""https://financing.paypal.com/ppfinportal/content/forrester"" target=""_blank"">Voir les détails</a>.
-"
+                "
 "
                     See PayPal Feature Support details and list of supported regions
                     <a href=""https://developer.paypal.com/docs/classic/express-checkout/in-context/"" target=""_blank"">here</a>.
                 ","
                     Détails des fonctionnalités prises en charge par PayPal et liste des régions couvertes
                     <a href=""https://developer.paypal.com/docs/classic/express-checkout/in-context/"" target=""_blank"">ici</a>.
-"
+                "
 "
                     Supporting of American Express cards require additional agreement. Learn more at <a href=""http://www.paypal.com/amexupdate"">http://www.paypal.com/amexupdate</a>.
                 ","
                     L’acceptation des cartes American Express nécessite un accord complémentaire. En savoir plus sur <a href=""http://www.paypal.com/amexupdate"">http://www.paypal.com/amexupdate</a>.
-"
+                "
 " Transaction ID: ""%1"""," ID de transaction : « %1 »"
 """%1"" coupon code is not valid.","Le code de réduction « %1 » n’est pas valide."
 """%1"" is not a valid file path","« %1 » n’est pas un chemin de fichier valide"
@@ -539,7 +539,7 @@
                                 valid and website's base currency matches for that method, regardless of the method being enabled here.","Un moyen de paiement n’est visible que pour les clients dont l’adresse de facturation est
                                 valide et si la devise de base du site web lui correspond, même s’il est activé ici."
 "Api Key","Clé API"
-"Api key is not found for extension ","Clé API introuvable pour l’extension"
+"Api key is not found for extension ","Clé API introuvable pour l’extension "
 "App Switch","Changement d’application"
 "Appearance","Apparence"
 "Applies to category pages.","S’applique aux pages de catégorie."
@@ -601,7 +601,7 @@
 "Attribute code ""%code"" could not be found.","Code d’attribut « %code » introuvable."
 "Attribute group does not belong to attribute set","Le groupe d’attributs n’appartient pas au jeu d’attributs"
 "Attribute group does not belong to provided attribute set","Le groupe d’attributs n’appartient pas au jeu d’attributs indiqué"
-"Attribute label: ","Libellé de l’attribut :"
+"Attribute label: ","Libellé de l’attribut : "
 "Attribute set name is empty.","Le nom du jeu d’attributs est vide."
 "Attribute set not found: %1","Jeu d’attributs introuvable : %1"
 "Attribute with attributeCode ""%1"" does not exist.","L’attribut de code « %1 » n’existe pas."
@@ -1132,7 +1132,7 @@
                         une licence d’exportation est requise. Une expédition (quelle que soit sa valeur) à destination du Canada ne
                         nécessite pas de licence d’exportation. Vous pouvez saisir <b>%2</b> dans le champ AESITN si la valeur de l’expédition
                         remplit les critères d’exemption. Contactez USPS pour plus d’informations."
-"Edit ","Modifier"
+"Edit ","Modifier "
 "Edit Banner Text","Modifier le texte de la bannière"
 "Edit Button Text","Modifier le texte du bouton"
 "Edit Category Design","Modifier le design de la catégorie"
@@ -1914,7 +1914,7 @@
                 ","PayPal Express Checkout permet d’offrir à vos clients un financement via PayPal Credit&#174;, sans frais supplémentaires pour vous.
                         Vous êtes payé immédiatement, tandis que vos clients disposent de plus de temps pour payer. Un bouton de paiement préintégré leur permet de payer rapidement avec PayPal Credit&#174;.
                         <a href=""https://www.paypal.com/webapps/mpp/promotional-financing"" target=""_blank"">En savoir plus</a>
-"
+                "
 "PayPal gateway has rejected request.","La passerelle PayPal a rejeté la requête."
 "PayPal onboarding URL was not returned by the service.","Le service n’a pas renvoyé l’URL d’inscription PayPal."
 "PayPal order not found. Please try again.","Commande PayPal introuvable. Veuillez réessayer."
@@ -2065,7 +2065,7 @@
 "Provider is not allowed.","Le fournisseur n’est pas autorisé."
 "Provider is not configured.","Le fournisseur n’est pas configuré."
 "Providers to use","Fournisseurs à utiliser"
-"Public content cache lifetime in seconds. If field is empty default value 86400 will be saved. ","Durée de vie du cache du contenu public, en secondes. Si le champ est vide, la valeur par défaut 86400 est enregistrée."
+"Public content cache lifetime in seconds. If field is empty default value 86400 will be saved. ","Durée de vie du cache du contenu public, en secondes. Si le champ est vide, la valeur par défaut 86400 est enregistrée. "
 "Publisher '%publisher' is not declared.","L’éditeur « %publisher » n’est pas déclaré."
 "Qty Available","Qté disponible"
 "Qty To Deduct","Quantité à déduire"
@@ -2250,7 +2250,7 @@
 "Skip this configuration until next login.","Ignorer cette configuration jusqu’à la prochaine connexion."
 "Skip to page %1","Aller à la page %1"
 "Slide","Diapositive"
-"Slide ","Diapositive"
+"Slide ","Diapositive "
 "Slide Name","Nom de la diapositive"
 "Slider","Carrousel"
 "Slider Settings","Paramètres du carrousel"
@@ -2297,7 +2297,7 @@
 "Source Validator must implement SourceValidatorInterface.","Le validateur de source doit implémenter SourceValidatorInterface."
 "Source class ""%1"" for ""%2"" generation does not exist.","La classe source « %1 » de la génération « %2 » n’existe pas."
 "Source code ""%code"" does not exists","Le code de source « %code » n’existe pas"
-"Source code: ","Code de la source :"
+"Source code: ","Code de la source : "
 "Source item Validator must implement SourceItemValidatorInterface.","Le validateur d’élément de source doit implémenter SourceItemValidatorInterface."
 "Source item for %sku and %sourceCode does not exist","L’élément de source de %sku et %sourceCode n’existe pas"
 "Source item not found by source code: %1 and sku: %2.","Élément de source introuvable pour le code source %1 et le SKU %2."
@@ -2646,7 +2646,7 @@
                 Vos rapports sont accessibles en toute sécurité sur un tableau de bord personnalisé, hors du panneau d’administration, via le lien
                 « Accéder aux rapports avancés ». </br> Pour plus d’informations, consultez nos
                 <a href=""https://magento.com/legal/terms/privacy"">conditions générales</a>.
-"
+                "
 "This service provides a dynamic suite of reports with rich insights about your business.
                 Your reports can be accessed securely on a personalized dashboard outside of the admin panel by clicking on the
                 ""Go to Advanced Reporting"" link. </br> For more information, see our <a target=""_blank"" href=""https://magento.com/legal/terms/cloud-terms"">
@@ -2661,7 +2661,7 @@
 "This value must be compatible with the corresponding setting in the configured search engine. Be aware: a low query length limit may cause the performance impact.","Cette valeur doit être compatible avec le réglage correspondant du moteur de recherche configuré. Attention : une limite de longueur de requête trop basse peut dégrader les performances."
 "This website is excluded from customer's group.","Ce site web est exclu du groupe du client."
 "This will change your Admin and storefront by:","Cela modifiera votre administration et votre boutique :"
-"This will reset your configuration for Payment Services in ","Cela réinitialisera votre configuration Payment Services dans"
+"This will reset your configuration for Payment Services in ","Cela réinitialisera votre configuration Payment Services dans "
 "Thumbnail Image","Vignette"
 "Time in seconds between the widget updates.
 <br/>If not set, equals to 86400 seconds (24 hours). To update widget instantly, go to Cache Management and clear Blocks HTML Output cache.
@@ -2880,7 +2880,7 @@
 "View Shipment #1","Voir l’expédition n° 1"
 "View all","Tout voir"
 "View details","Voir les détails"
-"View your content for ","Voir votre contenu pour"
+"View your content for ","Voir votre contenu pour "
 "View's identifier is not set","L’identifiant de la vue n’est pas défini"
 "Viewed Products Images Only Template","Modèle images seules des produits consultés"
 "Viewed Products Images and Names Template","Modèle images et noms des produits consultés"
@@ -2989,8 +2989,8 @@
 "Your administrator at %store_name has given you access to Adobe Commerce","Votre administrateur sur %store_name vous a donné accès à Adobe Commerce"
 "Your billing address is not valid.","Votre adresse de facturation n’est pas valide."
 "Your operating system is not supported to work with this command","Votre système d’exploitation n’est pas pris en charge par cette commande"
-"Your order number is: ","Votre numéro de commande est :"
-"Your order numbers are: ","Vos numéros de commande sont :"
+"Your order number is: ","Votre numéro de commande est : "
+"Your order numbers are: ","Vos numéros de commande sont : "
 "Your order placed from %store_name is ready for pickup.","Votre commande passée sur %store_name est prête à être retirée."
 "Your payment was not successful. Please try again later.","Votre paiement a échoué. Veuillez réessayer plus tard."
 "Your request has been expired","Votre demande a expiré"
@@ -3000,7 +3000,7 @@
 "Your unique Sandbox Merchant ID for Adobe Commerce Payment Services.","Votre ID marchand Sandbox unique pour Adobe Commerce Payment Services."
 "Zero Subtotal Checkout","Commande à montant nul"
 "Zookeeper connection timed out!","Délai de connexion à Zookeeper dépassé !"
-"[ID: %1] ","[ID : %1]"
+"[ID: %1] ","[ID : %1] "
 "[ID: %value] %message","[ID : %value] %message"
 "[ID: %value] The Source does not exist.","[ID : %value] La source n’existe pas."
 "[ID: %value] The Stock does not exist.","[ID : %value] Le stock n’existe pas."

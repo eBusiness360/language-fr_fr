@@ -2,20 +2,20 @@
                         A comma-delimited list of links and link labels to append to the sitemap. <b>Example:</b><br/>http://www.mageworx.com,MageWorx.<br/>Link without 'http[s]://' will be treated as relative to this domain.<br/><b>NOTE!</b> http[s]:// is required in case the page is on some other website
                     ","
                         Liste de liens et de libellés séparés par des virgules, à ajouter au plan du site. <b>Exemple :</b><br/>http://www.mageworx.com,MageWorx.<br/>Un lien sans « http[s]:// » est considéré comme relatif à ce domaine.<br/><b>REMARQUE !</b> http[s]:// est obligatoire si la page se trouve sur un autre site
-"
+                    "
 "
                         You can exclude any specific CMS, Category, and Product pages from HTML sitemap on the corresponding grids, or on their Edit pages (Product, Category, CMS).
                     ","
                         Vous pouvez exclure du plan du site HTML des pages CMS, catégories et produits depuis leurs grilles ou leurs pages de modification (produit, catégorie, CMS).
-"
+                    "
 "
                     Please select attributes that will be used in the generation request.
                     These attributes data will be added instead of the {{category_attributes}} variable to the content request.
                     ","
                     Sélectionnez les attributs utilisés dans la requête de génération.
                     Leurs données remplacent la variable {{category_attributes}} dans la requête de contenu.
-"
-"  %1) [Redirect from %2 (%3) on store (ID:%4) is identical with existent redirect (ID:%5)] ","  %1) [La redirection depuis %2 (%3) sur le magasin (ID : %4) est identique à une redirection existante (ID : %5)]"
+                    "
+"  %1) [Redirect from %2 (%3) on store (ID:%4) is identical with existent redirect (ID:%5)] ","  %1) [La redirection depuis %2 (%3) sur le magasin (ID : %4) est identique à une redirection existante (ID : %5)] "
 "  %1) [Store ID: %2, Request Identifier: %3, Redirect ID: %4]","  %1) [ID magasin : %2, identifiant de requête : %3, ID de redirection : %4]"
 " - is already used for ""All Values"""," - est déjà utilisé pour « Toutes les valeurs »"
 " SEO Name"," Nom SEO"
@@ -251,7 +251,7 @@ Pour de nombreuses tâches simples, la différence entre GPT-4 et GPT-3.5 est fa
 "All selected questions already have translations for the chosen store views.","Toutes les questions sélectionnées ont déjà une traduction pour les vues magasin choisies."
 "All translations completed.","Toutes les traductions sont terminées."
 "Allow Third-party Links ▾","Autoriser les liens tiers ▾"
-"Also randomizers can be used within other template variables, ex: ","Les randomiseurs peuvent aussi être utilisés dans d’autres variables de modèle, par ex. :"
+"Also randomizers can be used within other template variables, ex: ","Les randomiseurs peuvent aussi être utilisés dans d’autres variables de modèle, par ex. : "
 "Also randomizers can be used within other template variables, ex: %1. Number of randomizers blocks is not limited within the template.","Les randomiseurs peuvent aussi être utilisés dans d’autres variables de modèle, par ex. : %1. Le nombre de blocs de randomiseurs n’est pas limité dans le modèle."
 "Alternate Hreflang URLs","URL hreflang alternatives"
 "An error occurred while deleting record(s).","Une erreur est survenue lors de la suppression des enregistrements."
@@ -364,7 +364,7 @@ Pour de nombreuses tâches simples, la différence entre GPT-4 et GPT-3.5 est fa
                     ","D’après la documentation OpenAI : température d’échantillonnage, entre 0 et 2. Une valeur
                         élevée comme 0.8 rend la sortie plus aléatoire, une valeur faible comme 0.2 la rend plus
                         ciblée et déterministe.
-"
+                    "
 "By OpenAI docs: What sampling temperature to use, between 0 and 2. Higher values like 0.8 will make the output more random, while lower values like 0.2 will make it more focused and deterministic.","D’après la documentation OpenAI : température d’échantillonnage, entre 0 et 2. Une valeur élevée comme 0.8 rend la sortie plus aléatoire, une valeur faible comme 0.2 la rend plus ciblée et déterministe."
 "By URL Key","Par clé d’URL"
 "By clicking the send button, you agree to MageWorx","En cliquant sur le bouton d’envoi, vous acceptez les conditions de MageWorx"
@@ -956,7 +956,7 @@ Pour de nombreuses tâches simples, la différence entre GPT-4 et GPT-3.5 est fa
 "MageWorx SEO Templates","Modèles SEO MageWorx"
 "Magento Information","Informations Magento"
 "Mageplaza Blog in XML Sitemap","Mageplaza Blog dans le plan de site XML"
-"Manage ","Gérer"
+"Manage ","Gérer "
 "Manage generation processes","Gérer les processus de génération"
 "Manages the canonical for any link that has the one-time selection of the several filters options within the same filter (multi-select). This setting works with <a href=""https://www.mageworx.com/magento-2-layered-navigation.html"" target=""_blank"">MageWorx LayeredNavigation extension</a>","Gère la balise canonique de tout lien comportant la sélection simultanée de plusieurs options d’un même filtre (sélection multiple). Fonctionne avec l’<a href=""https://www.mageworx.com/magento-2-layered-navigation.html"" target=""_blank"">extension MageWorx LayeredNavigation</a>"
 "Manages the maximum depth of the categories to show. Leave empty for default (all categories).","Profondeur maximale des catégories affichées. Laissez vide pour la valeur par défaut (toutes les catégories)."
@@ -1129,19 +1129,19 @@ Pour de nombreuses tâches simples, la différence entre GPT-4 et GPT-3.5 est fa
                         These attributes data will be added instead of the {{category_attributes}} variable to the content request.
                     ","Sélectionnez les attributs utilisés dans la requête de génération.
                         Leurs données remplacent la variable {{category_attributes}} dans la requête de contenu.
-"
+                    "
 "Please select attributes that will be used in the generation request.
                         These attributes data will be added instead of the {{product_attributes}} variable to the
                         content request.
                     ","Sélectionnez les attributs utilisés dans la requête de génération.
                         Leurs données remplacent la variable {{product_attributes}} dans la
                         requête de contenu.
-"
+                    "
 "Please select attributes that will be used in the generation request.
                         These attributes data will be added instead of the {{product_attributes}} variable to the content request.
                     ","Sélectionnez les attributs utilisés dans la requête de génération.
                         Leurs données remplacent la variable {{product_attributes}} dans la requête de contenu.
-"
+                    "
 "Please select attributes that will be used in the generation request.
                 These attributes data will be added instead of the {{category_attributes}} variable to the content request.","Sélectionnez les attributs utilisés dans la requête de génération.
                 Leurs données remplacent la variable {{category_attributes}} dans la requête de contenu."
@@ -1155,7 +1155,7 @@ Pour de nombreuses tâches simples, la différence entre GPT-4 et GPT-3.5 est fa
                             necessary stores and click 'Submit' button.
                         ","Indiquez l’entité, sélectionnez
                             les magasins voulus et cliquez sur « Envoyer ».
-"
+                        "
 "Please specify your Google API key. You can get your API key in your account at
 <a href=""https://console.cloud.google.com/apis/credentials"" target=""_blank"">Google Cloud portal</a>. This key is required to authorize API requests from your Magento store to Google's services.","Indiquez votre clé API Google. Vous la trouverez dans votre compte sur le
 <a href=""https://console.cloud.google.com/apis/credentials"" target=""_blank"">portail Google Cloud</a>. Elle est nécessaire pour autoriser les requêtes API de votre boutique Magento vers les services de Google."

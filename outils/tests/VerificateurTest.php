@@ -90,6 +90,12 @@ final class VerificateurTest extends TestCase
         self::assertSame(['correction-integree', 'correction-sans-objet'], $this->regles([Verificateur::CORRECTIONS => $f]));
     }
 
+    public function testLesEspacesDeBordSuiventLaCle(): void
+    {
+        $f = $this->fichier('core.csv', "\" each and \",\" l’unité et\"\n\"Total \",\"Total général \"\n");
+        self::assertSame(['espaces-bord'], $this->regles(['core.csv' => $f]));
+    }
+
     public function testDoublonDansUnFichierEtEntreFichiers(): void
     {
         $a = $this->fichier('amasty.csv', "\"Hello\",\"Bonjour\"\n\"Hello\",\"Salut\"\n");

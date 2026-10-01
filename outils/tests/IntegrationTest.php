@@ -8,6 +8,25 @@ use PHPUnit\Framework\TestCase;
 
 final class IntegrationTest extends TestCase
 {
+    public function testLaTraductionReprendLesEspacesDeBordDeLaCle(): void
+    {
+        // Fragments recolles a d'autres chaines : l'espace de bord fait partie du texte.
+        $r = Integration::integrer(
+            [],
+            [
+                ['cle' => ' each and ', 'traduction' => ' l’unité et', 'module' => 'Bss_X', 'zone' => 'front'],
+                ['cle' => 'Order Status: ', 'traduction' => 'Statut de la commande :', 'module' => 'Bss_X', 'zone' => 'front'],
+                ['cle' => 'Buy %1 for', 'traduction' => 'Achetez-en %1 à ', 'module' => 'Bss_X', 'zone' => 'front'],
+            ],
+            [],
+            []
+        );
+
+        self::assertSame(' l’unité et ', $r['entrees'][' each and ']);
+        self::assertSame("Statut de la commande\u{00A0}: ", $r['entrees']['Order Status: ']);
+        self::assertSame('Achetez-en %1 à', $r['entrees']['Buy %1 for']);
+    }
+
     public function testIntegreNormaliseEtRefuse(): void
     {
         $r = Integration::integrer(

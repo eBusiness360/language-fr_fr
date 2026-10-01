@@ -35,12 +35,25 @@ final class Integration
                 $refusees[] = ['cle' => $l['cle'], 'raison' => 'traduite par le pack communautaire'];
                 continue;
             }
-            $entrees[$l['cle']] = Normaliseur::normaliser($l['traduction']);
+            $entrees[$l['cle']] = self::bordsDeLaCle($l['cle'], Normaliseur::normaliser($l['traduction']));
             if ($l['zone'] === 'front') {
                 $front[] = $l['cle'];
             }
         }
 
         return ['entrees' => $entrees, 'front' => $front, 'refusees' => $refusees];
+    }
+
+    /**
+     * Les espaces de debut et de fin (espaces, tabulations, sauts de ligne ;
+     * pas l'insecable) de la traduction deviennent exactement ceux de la cle :
+     * un fragment recolle a une autre chaine (« Total: » . $x) les porte dans
+     * son texte, et un editeur de texte les rogne facilement.
+     */
+    private static function bordsDeLaCle(string $cle, string $traduction): string
+    {
+        preg_match('/^([ \t\r\n]*).*?([ \t\r\n]*)$/su', $cle, $bords);
+
+        return $bords[1] . (string) preg_replace('/^[ \t\r\n]+|[ \t\r\n]+$/u', '', $traduction) . $bords[2];
     }
 }

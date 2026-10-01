@@ -2,29 +2,29 @@
                         Allowed file types : jpg jpeg gif png. Gif can have only one frame
                     ","
                         Types de fichiers autorisés : jpg jpeg gif png. Un GIF ne peut contenir qu’une seule image
-"
+                    "
 "
                         Click <a href=""https://amasty.com/media/marketing/m2/product-labels-for-magento-2/product-labels-m2-free-labels-pack.zip"">here</a> to download the packs of label images.
                         
                 ","
                         Cliquez <a href=""https://amasty.com/media/marketing/m2/product-labels-for-magento-2/product-labels-m2-free-labels-pack.zip"">ici</a> pour télécharger les packs d’images d’étiquettes.
                         
-"
+                "
 "
                         If set, a pop-up and a store list on the store locator's page will show the short description.
                     ","
                         Si défini, la description courte s’affiche dans la fenêtre contextuelle et dans la liste des magasins de la page du localisateur.
-"
+                    "
 "
                         Image will be resized to 27x43 px. Allowed file types : jpg jpeg gif png. Gif can have only one frame
                     ","
                         L’image sera redimensionnée en 27x43 px. Types de fichiers autorisés : jpg jpeg gif png. Un GIF ne peut contenir qu’une seule image
-"
+                    "
 "
                     Click <a href=""https://amasty.com/media/marketing/m2/product-labels-for-magento-2/product-labels-m2-free-labels-pack.zip"">here</a> to download the packs of label images.
                 ","
                     Cliquez <a href=""https://amasty.com/media/marketing/m2/product-labels-for-magento-2/product-labels-m2-free-labels-pack.zip"">ici</a> pour télécharger les packs d’images d’étiquettes.
-"
+                "
 "
                     Variables: {PRICE} - regular price; {BR} - new line;{SAVE_PERCENT} - save percent;
                     {SAVE_AMOUNT} - save amount; {SPECIAL_PRICE} - special price; {ATTR:code} - attribute value, e.g.
@@ -39,7 +39,7 @@
                     {NEW_FOR} - nombre de jours depuis l’ajout du produit ; {SKU} - SKU du produit ;
                     {STOCK} - quantité du produit (page produit).
                     
-"
+                "
 "
                     Variables: {product_name} - product name, {label_name} - label name.
                     If empty, extension will use product name as labels alt tag.
@@ -48,7 +48,7 @@
                     Variables : {product_name} - nom du produit, {label_name} - nom de l’étiquette.
                     Si vide, l’extension utilise le nom du produit comme balise alt des étiquettes.
                     
-"
+                "
 "
                 Considering your current Magento version, please disable the module-mage-2.4.7-fix module to prevent frontend issues, as it is only compatible with version 2.4.7. Please, run the following command in the SSH: php bin/magento module:disable Amasty_Mage247Fix
             ","
@@ -71,17 +71,17 @@
                 {SPECIAL_PRICE} - prix spécial ; {ATTR:code} - valeur d’attribut, par ex. {ATTR:color} ;
                 {SPDL} - jours restants du prix spécial ; {SPHL} - heures restantes du prix spécial ;
                 {NEW_FOR} - nombre de jours depuis l’ajout du produit ; {SKU} - SKU du produit ; {STOCK} - quantité du produit (page produit).
-"
+                "
 "
                 Variables: {product_name} - product name, {label_name} - label name.
                 If empty, extension will use product name as labels alt tag.
                 ","
                 Variables : {product_name} - nom du produit, {label_name} - nom de l’étiquette.
                 Si vide, l’extension utilise le nom du produit comme balise alt des étiquettes.
-"
+                "
 " Price"," Prix"
 " Submitted Date:"," Date de soumission :"
-" To "," À"
+" To "," À "
 " by "," par "
 " can be found at the following stores:&nbsp;"," est disponible dans les magasins suivants :&nbsp;"
 " in your cart."," dans votre panier."
@@ -181,7 +181,7 @@
 "Additional Surcharge in amount of %1 was applied.","Une surcharge supplémentaire de %1 a été appliquée."
 "Additional information about license statuses can be viewed","Des informations complémentaires sur les statuts de licence sont disponibles"
 "Address Autosuggestion Restrictions","Restrictions de l’autocomplétion d’adresse"
-"Address: ","Adresse :"
+"Address: ","Adresse : "
 "Admin Answer Text","Texte de réponse admin"
 "Admin Discount","Remise admin"
 "Admin Email","E-mail de l’administrateur"
@@ -281,7 +281,7 @@
 "As in ""Ship Bundle Items"" setting","Comme dans le réglage « Ship Bundle Items »"
 "Assign Dealer","Attribuer un revendeur"
 "Assign a Dealer","Attribuer un revendeur"
-"Assigned From ","Attribué par"
+"Assigned From ","Attribué par "
 "Assigned From <strong>%from</strong> To <strong>%to</strong>","Attribué par <strong>%from</strong> à <strong>%to</strong>"
 "Attribute 1","Attribut 1"
 "Attribute 2","Attribut 2"
@@ -382,7 +382,7 @@
 "Choose «Yes» to hide labels, which contain text with variables equal to zero or not specified variables.","Choisissez « Oui » pour masquer les étiquettes dont le texte contient des variables nulles ou non renseignées."
 "Choose ‘Yes’ to hide the price for the selected product categories and customer groups","Choisissez « Oui » pour masquer le prix pour les catégories de produits et groupes de clients sélectionnés"
 "Chosen Shipping Address and Method are allowed to be modified on checkout","L’adresse et la méthode d’expédition choisies peuvent être modifiées lors du paiement"
-"City: ","Ville :"
+"City: ","Ville : "
 "Clear Quote","Vider le devis"
 "Clone as Quote","Cloner en tant que devis"
 "Close Current Menu List","Fermer la liste de menu actuelle"
@@ -425,7 +425,7 @@
 "Country to Currency Mapping","Correspondance pays → devise"
 "Country to Currency Switch","Changement de devise selon le pays"
 "Country to URL Mapping","Correspondance pays → URL"
-"Country: ","Pays :"
+"Country: ","Pays : "
 "Create New Label","Créer une étiquette"
 "Create New Quote","Créer un nouveau devis"
 "Create New Quote for %1","Créer un nouveau devis pour %1"
@@ -681,7 +681,7 @@
 "Generate feed","Générer le flux"
 "Generated","Généré"
 "Generation History","Historique des générations"
-"Generation Time: ","Durée de génération :"
+"Generation Time: ","Durée de génération : "
 "Geo IP Redirect","Redirection Geo IP"
 "Geo IP request failed with status code %1","La requête Geo IP a échoué avec le code %1"
 "Geo Ip Data","Données Geo IP"
@@ -840,7 +840,7 @@
 "Labels Alignment","Alignement des étiquettes"
 "Labels with specified ID ""%1"" not found.","Étiquettes d’ID « %1 » introuvables."
 "Last Cron Activity: %1","Dernière activité cron : %1"
-"Last Imported: ","Dernier import :"
+"Last Imported: ","Dernier import : "
 "Last Modified Date","Date de dernière modification"
 "Leave -- Default Config -- to keep using the Stores > Configuration > Hide Price settings","Laissez -- Configuration par défaut -- pour continuer à utiliser les réglages Boutiques > Configuration > Hide Price"
 "Leave Empty to Disable Notifications","Laisser vide pour désactiver les notifications"
@@ -1101,7 +1101,7 @@ Remarque : les URL sont exclues sur correspondance partielle. Si vous indiquez 
 "Product was added to cart confirmation popup","Fenêtre de confirmation d’ajout au panier"
 "Product: %product","Produit : %product"
 "Production Environment","Environnement de production"
-"Products Count: ","Nombre de produits :"
+"Products Count: ","Nombre de produits : "
 "Products Qty","Qté de produits"
 "Products Qty Limit","Limite de quantité de produits"
 "Products in Feed Preview","Produits de l’aperçu du flux"
@@ -1374,7 +1374,7 @@ Remarque : les URL sont exclues sur correspondance partielle. Si vous indiquez 
 "Something went wrong. Please review the error log.","Une erreur est survenue. Consultez le journal des erreurs."
 "Something went wrong:","Une erreur est survenue :"
 "Sorry we're unable to display the nearby stores because the ""Use browser location"" or ""Use Geo IP"" options are disabled in the module settings. Please, contact the administrator.","Impossible d’afficher les magasins à proximité : les options « Utiliser la position du navigateur » et « Utiliser Geo IP » sont désactivées dans les paramètres du module. Contactez l’administrateur."
-"Sorry, Google failed to get directions and answered with status: ","Google n’a pas pu calculer l’itinéraire et a renvoyé le statut :"
+"Sorry, Google failed to get directions and answered with status: ","Google n’a pas pu calculer l’itinéraire et a renvoyé le statut : "
 "Sorry, no locations were found.","Aucun magasin trouvé."
 "Sorry, no products were found.","Désolé, aucun produit trouvé."
 "Sorry, that is not a valid card number","Ce numéro de carte n’est pas valide"
@@ -1403,7 +1403,7 @@ Remarque : les URL sont exclues sur correspondance partielle. Si vous indiquez 
 "Specify the time period to display the number of orders in the 'Qty Sold' field.","Spécifiez la période à afficher pour le nombre de commandes dans le champ « Qté vendue »."
 "Start of Break","Début de la pause"
 "State:","État/Région :"
-"State: ","Région :"
+"State: ","Région : "
 "Static Text","Texte fixe"
 "Status was changed for %1 review(s)","Statut modifié pour %1 avis"
 "Stay on Current Page","Rester sur la page actuelle"
@@ -1467,7 +1467,7 @@ Remarque : les URL sont exclues sur correspondance partielle. Si vous indiquez 
 "The Relation has been deleted.","La relation a été supprimée."
 "The Relation has been saved.","La relation a été enregistrée."
 "The Relation has not been saved. Please review the error log for the details.","La relation n’a pas été enregistrée. Consultez le journal des erreurs pour plus de détails."
-"The attribute_id is not defined. Please try to reload the page. ","L’attribute_id n’est pas défini. Essayez de recharger la page."
+"The attribute_id is not defined. Please try to reload the page. ","L’attribute_id n’est pas défini. Essayez de recharger la page. "
 "The code is used internally. Make sure you don't use spaces or more than %1 symbols.","Ce code est utilisé en interne. N’utilisez pas d’espaces ni plus de %1 caractères."
 "The current user cannot perform operations on quote ""%quote_id""","L’utilisateur actuel ne peut pas effectuer d’opérations sur le devis « %quote_id »"
 "The delear can select from the groups above when creates a customer or an order.","Le revendeur peut choisir parmi les groupes ci-dessus lorsqu’il crée un client ou une commande."
@@ -1791,7 +1791,7 @@ Non : le client n’est redirigé que vers une autre vue magasin du même site 
 "Your quote request from %store_name has been approved. You can check the status of your quote request and proceed to checkout by ","Votre demande de devis auprès de %store_name a été approuvée. Vous pouvez vérifier le statut de votre demande de devis et procéder au paiement en "
 "Your quote request from %store_name has been canceled.","Votre demande de devis auprès de %store_name a été annulée."
 "Your quote request from %store_name has been canceled.  You can check the status of your quote request by ","Votre demande de devis auprès de %store_name a été annulée. Vous pouvez vérifier le statut de votre demande de devis en "
-"Your quote request from %store_name has been canceled.  You can check the status of your quote request by ","Votre demande de devis sur %store_name a été annulée. Vous pouvez suivre son statut"
+"Your quote request from %store_name has been canceled.  You can check the status of your quote request by ","Votre demande de devis sur %store_name a été annulée. Vous pouvez suivre son statut "
 "Your quote request from %store_name has been expired. You can check the status of your quote request by ","Votre demande de devis auprès de %store_name a expiré. Vous pouvez vérifier le statut de votre demande de devis en "
 "Your quote request from %store_name has been modified.","Votre demande de devis auprès de %store_name a été modifiée."
 "Your quote request from %store_name has been modified.  You can check the status of your quote request by  ","Votre demande de devis auprès de %store_name a été modifiée. Vous pouvez vérifier le statut de votre demande de devis en  "
@@ -1804,7 +1804,7 @@ Non : le client n’est redirigé que vers une autre vue magasin du même site 
 "Zip","Code postal"
 "Zip From","Code postal de début"
 "Zip To","Code postal de fin"
-"Zip: ","Code postal :"
+"Zip: ","Code postal : "
 "[no-image]","[aucune image]"
 "`Is New` Condition","Condition « Nouveau »"
 "`On Sale` Condition","Condition « En promotion »"

@@ -79,6 +79,9 @@ final class Verificateur
                 if (in_array($cle, $this->interdites, true)) {
                     $constats[] = $erreur('interdite', 'chaîne comparée en dur dans du JavaScript');
                 }
+                if (self::bords($cle) !== self::bords($trad)) {
+                    $constats[] = $erreur('espaces-bord', 'espaces de début ou de fin différents de la clé (fragment recollé à une autre chaîne)');
+                }
                 if (Variables::extraire($cle) !== Variables::extraire($trad)) {
                     $constats[] = $erreur('variables', 'paramètres, directives ou balises différents');
                 }
@@ -103,6 +106,14 @@ final class Verificateur
         }
 
         return $constats;
+    }
+
+    /** @return array{0: string, 1: string} espaces de debut et de fin (hors insecable) */
+    private static function bords(string $t): array
+    {
+        preg_match('/^([ \t\r\n]*).*?([ \t\r\n]*)$/su', $t, $m);
+
+        return [$m[1] ?? '', $m[2] ?? ''];
     }
 
     /** @return list<Constat> */

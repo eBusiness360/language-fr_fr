@@ -60,7 +60,7 @@
 "Replicas","Réplicas"
 "Retention delay","Durée de conservation"
 "Row with attribute_code ""%1"" cannot be updated. Error: %2","La ligne avec l’attribute_code « %1 » ne peut pas être mise à jour. Erreur : %2"
-"Score : ","Score :"
+"Score : ","Score : "
 "Score Mode","Mode de score"
 "Score Mode Configuration","Configuration du mode de score"
 "Search type","Type de recherche"

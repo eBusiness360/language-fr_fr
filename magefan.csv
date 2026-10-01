@@ -2,12 +2,12 @@
                         <strong>Notice:</strong> <em>Please use this section only if you need to enter short content completely different from main content.<br/>Please <a href=""https://magefan.com/blog/add-read-more-tag-to-blog-post-content/"" target=""_blank"" title=""Add &quot;read more&quot; tag to Magento 2 blog post content"">read more</a> about how to configure ""read more"" tag.</em>
                     ","
                         <strong>Remarque :</strong> <em>n’utilisez cette section que si vous devez saisir un contenu court totalement différent du contenu principal.<br/>En savoir plus sur la configuration de la balise « read more » : <a href=""https://magefan.com/blog/add-read-more-tag-to-blog-post-content/"" target=""_blank"" title=""Add &quot;read more&quot; tag to Magento 2 blog post content"">lire la suite</a>.</em>
-"
+                    "
 "
                     Enter user ID.
                 ","
                     Saisissez l’ID de l’utilisateur.
-"
+                "
 "
                     Leave blank to use default template <em>Magefan_Blog::widget/recent.phtml</em>.<br/>
                     <em>Magefan_Blog::widget/recent_masonry.phtml</em> template is also available out of the box.
@@ -64,7 +64,7 @@
                     Magefan_BlogExtra::post/list/block-5-2.phtml
                     Magefan_BlogExtra::post/list/block-5-3.phtml
                     <pre>
-"
+                "
 "%1 Comment(s)","%1 commentaire(s)"
 "%1 has been duplicated.","%1 a été dupliqué."
 "%1 has been saved.","%1 a été enregistré."
@@ -149,7 +149,7 @@
 "Command Line Interface Section","Section Interface en ligne de commande"
 "Command Line by Magefan","Ligne de commande par Magefan"
 "Command not found or error occurred.","Commande introuvable ou erreur survenue."
-"Commands will be executed by custom PHP binary: ","Les commandes seront exécutées par le binaire PHP personnalisé :"
+"Commands will be executed by custom PHP binary: ","Les commandes seront exécutées par le binaire PHP personnalisé : "
 "Comment is not longer exist.","Le commentaire n’existe plus."
 "Comment should be specified","Le commentaire doit être renseigné"
 "Comment text is too short.","Le texte du commentaire est trop court."
@@ -261,7 +261,7 @@
 "Magefan Blog is disabled, to enable the extension please navigate to
                         <a href=""%1"" target=""_blank"">Stores > Configuration > Magefan Extensions > Blog</a>.","Magefan Blog est désactivé. Pour activer l’extension, allez dans
                         <a href=""%1"" target=""_blank"">Magasins > Configuration > Extensions Magefan > Blog</a>."
-"Magefan Command Line Interface is disabled, to enable the extension please navigate to ","L’interface en ligne de commande Magefan est désactivée. Pour activer l’extension, allez dans"
+"Magefan Command Line Interface is disabled, to enable the extension please navigate to ","L’interface en ligne de commande Magefan est désactivée. Pour activer l’extension, allez dans "
 "Magefan Email Templates","Modèles d’e-mails Magefan"
 "Magefan Extensions","Extensions Magefan"
 "Magefan Help Button","Bouton d’aide Magefan"
