@@ -1,6 +1,4 @@
 # Chaines comparees ou affectees en dur dans du JavaScript.
 # Ne les traduire qu'apres correction du code par maxcode/module-translation-fixes.
-# Magento_MediaGalleryUi js/action/deleteImageWithDetailConfirmation.js:58 (section.title === 'Used In')
-Used In
 # Swissup_BreezeThemeEditor js/editor/css-manager.js:42 (msg.indexOf('Access token required'))
 Access token required

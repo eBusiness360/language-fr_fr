@@ -83,7 +83,7 @@ final class Verificateur
                     if (preg_match('/(?<![\p{L}_])' . preg_quote((string) $en, '/') . '(?![\p{L}_])/iu', $texteCle)
                         && !str_contains($normalise, str_replace('’', "'", $traduit))) {
                         $constats[] = new Constat('avertissement', $nom, $ligne, 'glossaire',
-                            sprintf('« %s » se traduit « %s » dans le pack communautaire — « %s »', $en, $traduit, mb_substr($cle, 0, 60)));
+                            sprintf('« %s » se traduit « %s » (glossaire) — « %s »', $en, $traduit, mb_substr($cle, 0, 60)));
                     }
                 }
             }
