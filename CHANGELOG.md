@@ -2,6 +2,12 @@
 
 Format : [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/), versions : [SemVer](https://semver.org/lang/fr/).
 
+## [2.0.1] — 2026-10-07
+
+### Modifié
+- `composer.json` : description bilingue anglais / français (affichée telle quelle sur
+  Packagist), « Magento 2 » cité dans les deux langues. Aucun fichier de traduction modifié.
+
 ## [2.0.0] — 2026-10-01
 
 Première version publique. Elle remplace les paquets maison précédents (pack local

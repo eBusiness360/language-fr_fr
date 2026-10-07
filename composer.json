@@ -1,6 +1,6 @@
 {
     "name": "maxcode/language-fr_fr",
-    "description": "Complément français pour Magento 2 : ce que le pack communautaire ne traduit pas — cœur et modules tiers courants.",
+    "description": "EN: French complement for Magento 2: translates what the community language pack leaves out, for the core and common third-party modules. FR : Complément français pour Magento 2 : ce que le pack communautaire ne traduit pas, pour le cœur et les modules tiers courants.",
     "type": "magento2-language",
     "license": "MIT",
     "authors": [
