@@ -2,6 +2,17 @@
 
 Format : [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/), versions : [SemVer](https://semver.org/lang/fr/).
 
+## [Non publié]
+
+### Corrigé
+- `corrections-communautaire.csv` : « Mettre à jour la liste d’achats » et « Partager la liste d’achats »
+  (boutons de la liste d'achats, `Magento_Wishlist`) ; le pack communautaire omet l'article « la ».
+
+### Ajouté
+- `magepal.csv` : « Link Guest Order » (« Rattacher une commande invité »), libellé du lien du compte client
+  déclaré dans un layout XML (`customer_account.xml` de `magepal/magento2-guest-to-customer`), donc absent de
+  l'extraction des appels `__()`.
+
 ## [2.0.1] — 2026-10-07
 
 ### Modifié

@@ -14,6 +14,8 @@ français), qui alimente le dépôt `magento-l10n/language-fr_FR`.
 | Clé (module) | Communautaire | Corrigé | Faute | Proposée en amont |
 |---|---|---|---|---|
 | `Someone logged into this account from another device or browser. Your current session is terminated.` (Magento_Security) | « Quelqu'un d'autre s'est connecté avec ce compte sur un autre appareil ou navigateur. Cette sessions se termine. » | « Quelqu’un s’est connecté à ce compte depuis un autre appareil ou navigateur. Votre session actuelle est terminée. » | accord (« Cette sessions »), « d'autre » redondant | à faire |
+| `Update Wish List` (Magento_Wishlist) | « Mettre à jour liste d'achats » | « Mettre à jour la liste d’achats » | article manquant : libellé de bouton télégraphique | à faire |
+| `Share Wish List` (Magento_Wishlist) | « Partager liste d'achats » | « Partager la liste d’achats » | article manquant : libellé de bouton télégraphique | à faire |
 
 ## Candidates non retenues (style, pas faute)
 
