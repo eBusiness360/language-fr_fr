@@ -1,5 +1,7 @@
 # Complément français pour Magento 2
 
+![Packagist](https://img.shields.io/packagist/v/maxcode/language-fr_fr?color=0F1E4D)
+
 Traduit ce que le pack communautaire [`community-engineering/language-fr_fr`](https://github.com/magento-l10n/language-fr_FR)
 ne traduit pas : le reste du cœur Magento et les modules tiers courants (Amasty, Mageplaza,
 Mirasvit, MageWorx, Magefan, Smile, Fooman, BSS, Xtento, Magezon, Porto, Swissup Breeze…).
