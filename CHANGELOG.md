@@ -2,6 +2,11 @@
 
 Format : [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/), versions : [SemVer](https://semver.org/lang/fr/).
 
+## [2.0.3] — 2026-11-20
+
+### Modifié
+- Documentation : README harmonisé avec les autres modules Maxcode (bandeau centré, badges), README anglais ajouté (`README.md`) ; le français passe dans `README.fr.md`. Aucun fichier de traduction modifié.
+
 ## [2.0.2] — 2026-11-20
 
 ### Corrigé

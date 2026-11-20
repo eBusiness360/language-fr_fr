@@ -1,41 +1,62 @@
-# Complément français pour Magento 2
+<div align="center">
 
+**English** · [Français](README.fr.md)
+
+# Maxcode language-fr_fr: French complement for Magento 2
+
+**Translates what the community language pack leaves out, for the Magento core and common third-party modules.**
+
+![License: MIT](https://img.shields.io/badge/license-MIT-1E4FA3)
+![Magento 2.4](https://img.shields.io/badge/Magento-2.4.x-F26322)
 ![Packagist](https://img.shields.io/packagist/v/maxcode/language-fr_fr?color=0F1E4D)
 
-Traduit ce que le pack communautaire [`community-engineering/language-fr_fr`](https://github.com/magento-l10n/language-fr_FR)
-ne traduit pas : le reste du cœur Magento et les modules tiers courants (Amasty, Mageplaza,
-Mirasvit, MageWorx, Magefan, Smile, Fooman, BSS, Xtento, Magezon, Porto, Swissup Breeze…).
-Il s'installe **par-dessus** le pack communautaire et ne modifie aucune de ses traductions,
-sauf ses fautes avérées, regroupées dans `corrections-communautaire.csv` et proposées en amont.
-Il laisse aussi intactes les traductions françaises que les modules livrent eux-mêmes.
+</div>
+
+## What it does
+
+Translates into French what the community pack
+[`community-engineering/language-fr_fr`](https://github.com/magento-l10n/language-fr_FR) does not translate: the rest of
+the Magento core and common third-party modules (Amasty, Mageplaza, Mirasvit, MageWorx, Magefan, Smile, Fooman, BSS,
+Xtento, Magezon, Porto, Swissup Breeze…). It installs **on top of** the community pack and changes none of its
+translations, except its proven mistakes, which are gathered in `corrections-communautaire.csv` and proposed upstream.
+It also leaves untouched the French translations that modules ship themselves.
 
 ## Installation
 
-    composer require maxcode/language-fr_fr
-    bin/magento setup:upgrade
-    bin/magento cache:clean translate
-    bin/magento setup:static-content:deploy fr_FR   # en mode production
+```bash
+composer require maxcode/language-fr_fr
+bin/magento setup:upgrade
+bin/magento cache:clean translate
+bin/magento setup:static-content:deploy fr_FR   # in production mode
+```
 
-Facultatif — pour les chaînes que Magento n'expose pas à la traduction :
+Optional, for the strings Magento does not expose to translation:
 
-    composer require maxcode/module-translation-fixes
+```bash
+composer require maxcode/module-translation-fixes
+```
 
-Les traductions de modules absents de votre boutique sont sans effet.
+Translations of modules that are not in your store have no effect.
 
-## Contribuer
+## Contributing
 
-Une clé n'entre dans le pack que si le pack communautaire ne la traduit pas, ni le module qui
-l'utilise (son propre `i18n/fr_FR.csv`). Un fichier par éditeur (`amasty.csv`, `mageworx.csv`…),
-`core.csv` pour le cœur. Une faute du pack communautaire se corrige dans
-`corrections-communautaire.csv`, avec sa ligne dans `docs/corrections-communautaire.md`.
-Avant toute proposition :
+A key goes into the pack only if the community pack does not translate it, nor the module that uses it (its own
+`i18n/fr_FR.csv`). One file per vendor (`amasty.csv`, `mageworx.csv`…), `core.csv` for the core. A mistake of the
+community pack is fixed in `corrections-communautaire.csv`, with its line in `docs/corrections-communautaire.md`.
+Before any proposal:
 
-    outils/php outils/telecharger-communautaire.php
-    outils/php outils/verifier.php
+```bash
+outils/php outils/telecharger-communautaire.php
+outils/php outils/verifier.php
+```
 
-Les règles (apostrophe `’`, espace insécable avant `: ; ! ?`, `« »`, `…`, variables conservées)
-sont contrôlées par la CI.
+The typographic rules (apostrophe `’`, no-break space before `: ; ! ?`, `« »`, `…`, variables kept) are checked by the
+CI.
 
-## Licence
+## Changelog
 
-MIT — © 2026 eBusiness360 – Maxime LESGUILLIER.
+See [CHANGELOG.md](CHANGELOG.md).
+
+## License
+
+MIT, © 2026 eBusiness360 – Maxime LESGUILLIER. See [LICENSE](LICENSE).
